@@ -1,0 +1,22 @@
+{
+  "name": "wedding-app",
+  "version": "1.0.0",
+  "description": "A wedding application for managing RSVPs and uploading photos using React.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.3"
+  }
+}
