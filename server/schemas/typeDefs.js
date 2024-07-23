@@ -1,56 +1,28 @@
-const { User } = require('../models');
-const { signToken, AuthenticatrionError } = require('../utils/auth');
+const typeDefs = `
+type User {
+_id: ID
+firstName: String
+lastName: String
+email: String
+}
 
-const resolvers = {
-    Query: {
-        users: async () => {
-            return User.find();
-        },
+type Auth {
+token: ID!
+type: String
+}
 
-        user: async (parent, { userId }) => {
-            return User.findOne({ _id: userId });
-        },
+type Query {
+users: [User]!
+user(userId: ID!): User
+me: User
+}
 
-        me: async (parent, args, context ) => {
-            if (context.user) {
-                return User.findOne({ _id: context.user._id });
-            }
+type Mutation {
+addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+updateUser(firstName: String, lastName: String, email: String, password: String): User
+login(email: String!, password: String!): Auth
+removeUser(userId: ID!): User
+}
+`;
 
-            throw AuthenticatrionError;
-        },
-    },
-
-    mutations: {
-        addUser: async (parent, { firstName, lastName, email, password }) => {
-            const user = await User.create({ firstName, lastName, email, password });
-            const token = signToken(user);
-        },
-
-        login: async (parent, { email, password }) => {
-            const user = await User.findOne({ email });
-
-            if (!user) {
-                throw new AuthenticatrionError('No user with this email');
-            }
-
-            const correctPw = await user.isCorrectPassword(password);
-
-            if (!correctPw)  {
-                throw new AuthenticatrionError('incorrect password');
-            }
-
-            const token = signToken(user);
-            return { token, user };
-        },
-
-        removeUser: async (parent, args, context) => {
-            if (context.user.isAdmin) {
-                return User.findByIdAndDelete({ _id: context.user._id });
-            }
-
-            throw AuthenticatrionError;
-        },
-    },
-};
-
-module.exports = resolvers;
+module.exports = typeDefs;
