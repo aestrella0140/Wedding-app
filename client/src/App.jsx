@@ -1,16 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import * as React from 'react';
+import { Outlet } from 'react-router-dom';
+import { Admin, Resource, ListGuesser } from 'react-admin';
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+  HttpLink
+} from '@apollo/client';
+
+import { setContext } from "@apollo/client/link/context";
+
+import { StoreProvider } from './utils/GlobalState';
+import './App.css';
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+})
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      
-    </>
+    <ApolloProvider client={client}>
+      <div>
+        <StoreProvider>
+
+        </StoreProvider>
+      </div>
+    </ApolloProvider>
   )
 }
 
-export default App
+export default App;
