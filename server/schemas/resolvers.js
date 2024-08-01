@@ -20,7 +20,7 @@ const resolvers = {
         },
     },
 
-    mutations: {
+    Mutation: {
         addUser: async (parent, { firstName, lastName, email, password }) => {
             const user = await User.create({ firstName, lastName, email, password });
             const token = signToken(user);

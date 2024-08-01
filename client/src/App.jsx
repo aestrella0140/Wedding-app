@@ -12,7 +12,7 @@ import {
 
 import { setContext } from "@apollo/client/link/context";
 
-import { StoreProvider } from './utils/GlobalState';
+
 import './App.css';
 
 const httpLink = createHttpLink({
@@ -39,9 +39,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div>
-        <StoreProvider>
-
-        </StoreProvider>
+        
       </div>
     </ApolloProvider>
   )
