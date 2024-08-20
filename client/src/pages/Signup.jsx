@@ -25,7 +25,7 @@ const SignupForm = () => {
         })
         .then((token) => {
           console.log("received token:", token);
-          if (!token || typeof token !== "sting") {
+          if (!token || typeof token !== "string") {
             throw new Error("invalid token");
           }
           console.log(response);
@@ -58,7 +58,7 @@ const SignupForm = () => {
           name='lastName'
           id='lastName'
           placeholder='enter last name here'
-          onChange={formik.handleChange}
+          onChange={formik.handleChange} 
           value={formik.values.lastName}
         />
 
@@ -85,3 +85,5 @@ const SignupForm = () => {
     </div>
   );
 };
+
+export default SignupForm;
