@@ -7,13 +7,13 @@ import {
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-  HttpLink
 } from '@apollo/client';
 
 import { setContext } from "@apollo/client/link/context";
 
 
 import './App.css';
+import Nav from './components/nav';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -39,6 +39,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div>
+        <Nav />
         <Outlet />
       </div>
     </ApolloProvider>
