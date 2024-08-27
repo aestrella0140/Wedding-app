@@ -17,15 +17,15 @@ function Nav() {
             );
         } else {
             return (
-                <div>
-                    <ul>
+                <div className="nav-logged-out">
+                    <ul className="ul-logged-out">
                         <li>
-                            <Link to='/Signup'>
+                            <Link to='/Signup' className="link">
                             Signup
                             </Link>
                         </li>
                         <li>
-                            <Link to='/Login'>
+                            <Link to='/Login' className="link">
                             Login
                             </Link>
                         </li>
@@ -37,9 +37,9 @@ function Nav() {
 
     return (
         <header>
-            <div>
+            <div className="nav-logged-out" >
                 <h2>
-                    <Link to='/'>
+                    <Link to='/' className="nav-title">
                     Estrella Wedding
                     </Link>
                 </h2>
