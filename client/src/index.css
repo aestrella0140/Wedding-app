@@ -30,6 +30,7 @@
 
 .link {
   display: flex;
+  padding: 6px;
   margin-top: 9px;
   margin-right: 10px;
   color: #242424;
@@ -39,12 +40,15 @@
 
 .ul-logged-out {
   display: flex;
+  margin-bottom: 10px;
   list-style: none;
 }
 
 .nav-title {
+  display: flex;
+  margin-top: 6px;
   color: #ffffff;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 @media (prefers-color-scheme: light) {
