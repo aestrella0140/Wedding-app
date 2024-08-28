@@ -7,6 +7,9 @@ import "./index.css";
 import SignupForm from "./pages/Signup.jsx";
 import LoginForm from "./pages/Login.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import Gallery from "./pages/Gallery.jsx";
+import Story from "./pages/Story.jsx";
+import RSVP from "./pages/RSVP.jsx";
 
 const router = createBrowserRouter([
   {

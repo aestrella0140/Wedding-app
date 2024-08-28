@@ -2,4 +2,3 @@
 A wedding application for managing RSVPs and uploading photos using React.
 
 
-Todos
