@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -58,13 +62,22 @@ body {
   margin-left: 15px;
 }
 
-/*homepage*/
+/*homepage*/ 
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 140px;
+}
+
+.home h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .home-link ul {
@@ -76,8 +89,23 @@ body {
 }
 
 .home-link li {
-  margin: 0 8px;
-  color: #213547;
+  margin: 0 10px;
+  position: relative;
+}
+
+.home-link li ::after {
+  content: '|';
+  position: absolute;
+  right: -10px;
+  color: #242424;
+}
+
+.home-link li:last-child::after {
+  content: '';
+}
+
+.home-link a {
+  color: #242424;
 }
 
 @media (prefers-color-scheme: light) {
