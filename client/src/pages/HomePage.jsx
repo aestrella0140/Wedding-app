@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 const homePage = () => {
   return (
-    <div>
+    <div className="home">
       <h1>Adrian & Tatiana</h1>
-      <div>
+      <div className="home-link">
         <ul>
           <li>
-            <Link to="/Story">Story</Link>
+            <Link to="/Story" >Story</Link>
           </li>
           <li>
-            <Link to="/Gallery">Gallery</Link>
+            <Link to="/Gallery" >Gallery</Link>
           </li>
           <li>
-            <Link to='/RSVP'>RSVP</Link>
+            <Link to='/RSVP' >RSVP</Link>
           </li>
         </ul>
       </div>

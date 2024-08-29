@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 /*navBar*/
 
 .nav-logged-out {
@@ -49,6 +56,28 @@
   margin-top: 6px;
   color: #ffffff;
   margin-left: 15px;
+}
+
+/*homepage*/
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-link ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 10px;
+  margin: 75px;
+}
+
+.home-link li {
+  margin: 0 8px;
+  color: #213547;
 }
 
 @media (prefers-color-scheme: light) {
