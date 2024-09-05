@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import thumbnail from '../assets/us_THUMBNAIL.jpg';
 
 const homePage = () => {
   return (
@@ -21,6 +22,10 @@ const homePage = () => {
 
       <div>
         <p>Feburary 23, 2026 Phoenix, AZ</p>
+      </div>
+
+      <div >
+        <img src={thumbnail} alt="" className="img"/>
       </div>
     </div>
   );
