@@ -8,8 +8,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #F5F5DC;
+
+  --primary-color: #4d634e;
+  --secondary-color: #35505e;
+  --text-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #F5F5DC;
+  background-color: #4d634e;
 }
 
 /*navBar*/
@@ -37,7 +39,7 @@ body {
   position: relative;
   margin-top: 0px;
   margin-bottom: 0;
-  background-color: #355E3B;
+  background-color: var(--primary-color);
 }
 
 .link {
@@ -45,7 +47,7 @@ body {
   padding: 6px;
   margin-top: 9px;
   margin-right: 10px;
-  color: #242424;
+  
   text-decoration: none;
   color: #ffffff;
 }
@@ -71,12 +73,12 @@ body {
   align-items: center;
   position: relative;
   margin-top: 140px;
+  color: #ffffff;
 }
 
 .home h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 4em;
-  color: #333;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -98,7 +100,7 @@ body {
   content: '|';
   position: absolute;
   right: -10px;
-  color: #242424;
+
 }
 
 .home-link li:last-child::after {
@@ -106,15 +108,17 @@ body {
 }
 
 .home-link a {
-  color: #242424;
+  color: var(--text-color);
 }
 
 .img {
-  
-  width: 900px;
+  width: 600px;
   height: auto;
   border-radius: 10px;
 }
+
+/*short story homepage*/
+
 
 @media (prefers-color-scheme: light) {
   :root {
