@@ -25,6 +25,11 @@ body {
   align-items: center;
   margin: 0;
   background-color: #4d634e;
+  background-image: url('../src/assets/flower-stock.png');
+  background-size: 95%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*navBar*/
