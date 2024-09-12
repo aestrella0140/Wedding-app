@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import thumbnail from '../assets/us_THUMBNAIL.jpg';
+import usThumbnail from '../assets/us_THUMBNAIL.jpg';
 
 const homePage = () => {
   return (
@@ -30,8 +30,8 @@ const homePage = () => {
         </p>
       </div>
 
-      <div >
-        <img src={thumbnail} alt="" className="img"/>
+      <div className="home-image">
+        <img src={usThumbnail} alt="Adrian and Tatiana.." className="img"/>
       </div>
     </div>
   );
