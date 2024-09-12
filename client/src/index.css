@@ -75,12 +75,27 @@ body {
 .home {
   text-align: center;
   padding: 20px;
+  
 }
 
 .home h1 {
+  
   font-family: 'Great Vibes', cursive;
   font-size: 3em;
   margin-bottom: 20px;
+  background-color: var(--secondary-color);
+  width: 20%;
+  margin: 0 auto;
+  padding: 3px;
+}
+.home-link {
+  background-color: var(--secondary-color);
+  width: 88%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  
 }
 
 .home-link ul {
