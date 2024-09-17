@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import usThumbnail from '../assets/us_THUMBNAIL.jpg';
+import flowerTopper from '../assets/flower-topper-flipped.png';
 
 const homePage = () => {
   return (
     <div className="home container">
+      <img src={flowerTopper} alt="eucalyptus drawing" className="topper" />
       <h1 className="ms-auto my-4 text-white rounded">Adrian & Tatiana</h1>
       <div className="home-link text-white p-1 rounded mx-auto">
         <ul className="d-flex justifycontent-center list-unstyled">

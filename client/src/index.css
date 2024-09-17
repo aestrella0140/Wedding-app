@@ -82,9 +82,15 @@ body {
   background-color: var(--secondary-color);
 }
 
+.topper {
+  width: 500px;
+  height: auto;
+  background-color: var(--secondary-color);
+}
+
 .home h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 3em;
+  font-size: 5em;
   margin-bottom: 20px;
   background-color: var(--secondary-color);
   width: 50%;
