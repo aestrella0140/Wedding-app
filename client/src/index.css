@@ -80,6 +80,10 @@ body {
 .home.container {
   padding: 20px;
   background-color: var(--secondary-color);
+  max-width: 1400px;
+  width: calc(100% + 40px);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .topper {
@@ -93,11 +97,14 @@ body {
   font-size: 5em;
   margin-bottom: 20px;
   background-color: var(--secondary-color);
-  width: 50%;
-  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
 .home-link {
   background-color: var(--secondary-color);
   width: 88%;
@@ -161,6 +168,39 @@ body {
   width: 600px;
   height: auto;
   border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+  .home.container {
+    width: calc(100% + 80px); /* Extend the width more for larger screens */
+    margin: 0 auto; /* Adjust negative margins */
+  }
+
+  .home h1 {
+    width: calc(100% + 80px); /* Extend the width more for larger screens */
+    margin: 0 40px; /* Adjust negative margins */
+  }
+
+  .img {
+    width: 800px; /* Larger image size for larger screens */
+  }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .home.container {
+    width: calc(100% + 20px); /* Extend the width less for smaller screens */
+    margin: 0 -10px; /* Adjust negative margins */
+  }
+
+  .home h1 {
+    width: calc(100% + 20px); /* Extend the width less for smaller screens */
+    margin: 0 auto; /* Adjust negative margins */
+  }
+
+  .img {
+    width: 100%; /* Full width image for smaller screens */
+  }
 }
 
 /*short story homepage*/

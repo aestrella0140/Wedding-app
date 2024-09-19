@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import usThumbnail from '../assets/us_THUMBNAIL.jpg';
-import flowerTopper from '../assets/flower-topper-flipped.png';
+import flowerTopper from '../assets/flower-topper-flipped-removebg-preview.png';
 
 const homePage = () => {
   return (
