@@ -40,6 +40,10 @@ const router = createBrowserRouter([
       path: '/RSVP',
       element: <RSVP />
     },
+    {
+      path: '/HomePage',
+      element: <HomePage />,
+    },
     ],
   },
 ]);
