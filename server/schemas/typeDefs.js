@@ -11,10 +11,24 @@ token: ID!
 type: String
 }
 
+type Error {
+path: Sting!
+message: String!
+}
+
+type RSVP {
+id: ID!
+name: String!
+email: String!
+attending: Boolean!
+guests: Int!
+}
+
 type Query {
 users: [User]!
 user(userId: ID!): User
 me: User
+getRSVP: [RSVP]
 }
 
 type Mutation {
@@ -22,6 +36,7 @@ type Mutation {
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
     removeUser(userId: ID!): User
+    addRSVP(name: String!, email: String!, attending: Boolean!, guest: Int!): RSVP
 }
 `;
 
