@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, RSVP } = require('../models');
 const { signToken, AuthenticatrionError } = require('../utils/auth');
 
 const resolvers = {
@@ -18,6 +18,9 @@ const resolvers = {
 
             throw AuthenticatrionError;
         },
+        getRSVPs: async () => {
+            return await RSVP.find();
+        }
     },
 
     Mutation: {
@@ -49,6 +52,11 @@ const resolvers = {
             }
 
             throw AuthenticatrionError;
+        },
+        createRSVP: async(_, { name, email, attending , guests }) => {
+            const newRSVP = new RSVP({ name, email, attending, guests });
+            await newRSVP.save();
+            return newRSVP;
         },
     },
 };
