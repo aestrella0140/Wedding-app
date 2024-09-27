@@ -19,6 +19,24 @@ const RSVPSchema = new Schema({
     }, 
     guests: {
         type: Number,
+        min: 0,
+        max: 3,
+        required: true,
+    },
+    address: {
+        type: String,
+        required: true,
+    },
+    city: {
+        type: String,
+        required: true,
+    },
+    state: {
+        type: String,
+        required: true,
+    },
+    zip: {
+        type: String,
         required: true,
     }
 });

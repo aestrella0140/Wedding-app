@@ -22,6 +22,7 @@ name: String!
 email: String!
 attending: Boolean!
 guests: Int!
+address: String!
 }
 
 type Query {
@@ -36,7 +37,7 @@ type Mutation {
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
     removeUser(userId: ID!): User
-    addRSVP(name: String!, email: String!, attending: Boolean!, guest: Int!): RSVP
+    addRSVP(name: String!, email: String!, attending: Boolean!, guest: Int!, address: String!): RSVP
 }
 `;
 

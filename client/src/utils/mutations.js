@@ -37,13 +37,14 @@ mutation removeUser {
 `;
 
 export const CREATE_RSVP = gql`
-mutation CreateRSVP($name: String!, $email: String!, $attending: Boolean!, $guests: Int!) {
-  createRSVP(name: $name, email: $email, attending: $attending, guests: $guests) {
+mutation CreateRSVP($name: String!, $email: String!, $attending: Boolean!, $guests: Int!, $address: String!) {
+  createRSVP(name: $name, email: $email, attending: $attending, guests: $guests, address: $address) {
   id
   name
   email
   attending
   guests
+  address
   }
 }
 `;
