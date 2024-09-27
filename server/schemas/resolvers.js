@@ -53,8 +53,8 @@ const resolvers = {
 
             throw AuthenticatrionError;
         },
-        createRSVP: async(_, { name, email, attending , guests, address }) => {
-            const newRSVP = new RSVP({ name, email, attending, guests, address });
+        createRSVP: async(_, { name, email, attending , guests, address, city, state, zip }) => {
+            const newRSVP = new RSVP({ name, email, attending, guests, address, city, state, zip });
             await newRSVP.save();
             return newRSVP;
         },

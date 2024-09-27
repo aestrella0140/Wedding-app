@@ -13,6 +13,10 @@ const RSVPForm = () => {
     email: Yup.string().required("email is required"),
     attending: Yup.boolean(),
     guests: Yup.number().min(0, "guests must be 0 or more"),
+    address: Yup.string().required("Address is required"),
+    city: Yup.string().required("City is required"),
+    state: Yup.string().required("State is required"),
+    zip: Yup.string().required("Zip Code is required")
   });
 
   return (
@@ -22,6 +26,10 @@ const RSVPForm = () => {
         email: "",
         attending: false,
         guests: 0,
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
       }}
       validationSchema={RSVPValidationSchema}
       onSubmit={(values, { setSubmitting }) => {
@@ -31,6 +39,10 @@ const RSVPForm = () => {
             email: values.email,
             attending: values.attending,
             guests: values.guests,
+            address: values.address,
+            city: values.city,
+            state: values.state,
+            zip: values.zip,
           },
         });
         setSubmitting(false);
@@ -40,7 +52,7 @@ const RSVPForm = () => {
         <Form>
           <div>
             <label htmlFor="name">Name</label>
-            <Field type="text" name="name" id="name"/>
+            <Field type="text" name="name" id="name" />
             <ErrorMessage name="name" component="div" className="error" />
           </div>
 
@@ -65,7 +77,33 @@ const RSVPForm = () => {
           <div>
             <label htmlFor="guests"> List of Guests</label>
             <Field type="number" id="guests" name="guests" />
-            <ErrorMessage name="guests" component="div" className="error"/>
+            <ErrorMessage name="guests" component="div" className="error" />
+          </div>
+
+          <div>
+            <div>
+              <label htmlFor="address"> Street Address</label>
+              <Field type="test" id="address" name="address" />
+              <ErrorMessage name="address" component="div" className="error" />
+            </div>
+
+            <div>
+              <label htmlFor="city"> City:</label>
+              <Field type="text" id="city" name="city" />
+              <ErrorMessage name="city" component="div" className="error" />
+            </div>
+
+            <div>
+              <label htmlFor="State"> State:</label>
+              <Field type="text" id="state" name="state" />
+              <ErrorMessage name="state" component="div" className="error" />
+            </div>
+
+            <div>
+              <label htmlFor="zip"> Zip Code:</label>
+              <Field type="number" id="zip" name="zip" />
+              <ErrorMessage name="zip" component="div" className="error" />
+            </div>
           </div>
         </Form>;
       }}

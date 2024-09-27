@@ -36,7 +36,7 @@ const RSVPSchema = new Schema({
         required: true,
     },
     zip: {
-        type: String,
+        type: Number,
         required: true,
     }
 });
