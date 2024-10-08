@@ -12,7 +12,7 @@ type: String
 }
 
 type Error {
-path: Sting!
+path: String!
 message: String!
 }
 
@@ -25,14 +25,14 @@ guests: Int!
 address: String!
 city: String!
 state: String!
-zip: Number!
+zip: Int!
 }
 
 type Query {
 users: [User]!
 user(userId: ID!): User
 me: User
-getRSVP: [RSVP]
+getRSVPs: [RSVP]
 }
 
 type Mutation {
@@ -40,7 +40,7 @@ type Mutation {
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
     removeUser(userId: ID!): User
-    addRSVP(name: String!, email: String!, attending: Boolean!, guest: Int!, address: String!, city: String!,
+    createRSVP(name: String!, email: String!, attending: Boolean!, guests: Int!, address: String!, city: String!,
     state: String!, zip: Int!): RSVP
 }
 `;

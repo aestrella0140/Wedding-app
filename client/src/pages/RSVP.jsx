@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import { useMutation } from "@apollo/client";
 import { CREATE_RSVP } from "../utils/mutations";
 
-const RSVPForm = () => {
+const Rsvp = () => {
   const [createRSVP, { loading }] = useMutation(CREATE_RSVP);
 
   const RSVPValidationSchema = Yup.object().shape({
@@ -16,7 +16,7 @@ const RSVPForm = () => {
     address: Yup.string().required("Address is required"),
     city: Yup.string().required("City is required"),
     state: Yup.string().required("State is required"),
-    zip: Yup.string().required("Zip Code is required")
+    zip: Yup.number().required("Zip Code is required")
   });
 
   return (
@@ -111,4 +111,4 @@ const RSVPForm = () => {
   );
 };
 
-export default RSVPForm;
+export default Rsvp;

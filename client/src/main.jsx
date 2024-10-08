@@ -9,7 +9,7 @@ import LoginForm from "./pages/Login.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Story from "./pages/Story.jsx";
-import RSVP from "./pages/RSVP.jsx";
+import Rsvp from './pages/RSVP.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
         element: <Story />,
       }, 
     {
-      path: '/RSVP',
-      element: <RSVP />
+      path: '/rsvp',
+      element: <Rsvp />,
     },
     {
       path: '/HomePage',
