@@ -21,8 +21,6 @@ const Rsvp = () => {
 
   return (
     <div>
-      <div>hello world</div>
-      <h1>RSVP form</h1>
       <Formik
         initialValues={{
           name: "",
@@ -72,10 +70,10 @@ const Rsvp = () => {
               <label>Are you attending?</label>
               <div role="group" aria-labelledby="attending">
                 <label htmlFor="attending">Yes</label>
-                <Field type="radio" name="attending" value="yes" />
+                <Field type="radio" name="attending" value={true} />
                 <label htmlFor="attending">No</label>
-                <Field type="radio" name="attending" value="no" />
-                <ErrorMessage name="name" component="div" />
+                <Field type="radio" name="attending" value={false} />
+                <ErrorMessage name="attending" component="div" />
               </div>
               <ErrorMessage
                 name="attending"
