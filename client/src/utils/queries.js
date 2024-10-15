@@ -1,7 +1,7 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_USERS = gql`
-query allUsers {
+  query allUsers {
     users {
       _id
       firstName
@@ -11,7 +11,7 @@ query allUsers {
 `;
 
 export const QUERY_SINGLE_USER = gql`
-query singleUser ($userId: ID!) {
+  query singleUser($userId: ID!) {
     user(userId: $userId) {
       _id
       firstName
@@ -21,11 +21,27 @@ query singleUser ($userId: ID!) {
 `;
 
 export const QUERY_ME = gql`
-query me {
+  query me {
     me {
       _id
       firstName
       lastName
+    }
+  }
+`;
+
+export const QUERY_GETRSVPS = gql`
+  query allRsvps {
+    rsvps {
+      _id
+      name
+      email
+      attending
+      guests
+      address
+      city
+      state
+      zip
     }
   }
 `;
