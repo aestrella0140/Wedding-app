@@ -2,26 +2,30 @@ import React from "react";
 import Gallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Masonry from "react-masonry-css";
+import us from "../assets/us.jpeg";
+import meAndHer from "../assets/meAndHer.jpeg";
+import meAndLove from "../assets/meAndLove.jpeg";
+import chapo from "../assets/chapo1.jpeg";
 
 const images = [
     {
-        original: "url-to-image1.png",
-        thumbnail: "url-to-thumbnail1.png",
+        original: us,
+        thumbnail: "us.jpeg",
         description: "description of image 1",
     },
     {
-        original: "url-to-image2.png",
-        thumbnail: "url-to-thumbnail2.png",
+        original: meAndHer,
+        thumbnail: "meAndHer.jpeg",
         description: "description of image 2",
     },
     {
-        original: "url-to-image1.png",
-        thumbnail: "url-to-thumbnail3.png",
+        original: chapo,
+        thumbnail: "chapo1.jpeg",
         description: "description of image 3",
     },
     {
-        original: "url-to-image1.png",
-        thumbnail: "url-to-thumbnail4.png",
+        original: meAndLove,
+        thumbnail: "meAndLove.jpeg",
         description: "description of image 4",
     },
     {
@@ -37,10 +41,32 @@ const images = [
 ];
 
 const PhotoGallery = () => {
+
+    const breakPointColObj = {
+        default: 3,
+        1100: 2,
+        700: 1
+    };
+
     return (
-        <div>
-            <Gallery items={images} />
-        </div>
+        <Masonry
+        breakpointCols={breakPointColObj}
+        className="masonry-grid"
+        columnClassName="masonry-grid-column"
+        >
+            {images.map((image, index) => (
+            <div key={index} className="image">
+            <Gallery
+             items={images}
+             showThumbnails={true}
+             showPlayButton={true}
+             showFullscreenButton={true} 
+             showNav={true}/>
+
+            </div>
+
+            ))}
+        </Masonry>
     );
 };
 
