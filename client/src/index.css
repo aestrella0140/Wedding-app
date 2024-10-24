@@ -264,6 +264,10 @@ form button:hover {
   width: 100%;
 }
 
+.gallery-container {
+  width: 75%;
+  /* cursor: pointer; */
+}
 
 @media (prefers-color-scheme: light) {
   :root {

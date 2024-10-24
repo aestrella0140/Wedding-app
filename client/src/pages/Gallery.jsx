@@ -11,22 +11,22 @@ const images = [
   {
     original: us,
     thumbnail: us,
-    description: "description of image 1",
+    description: "me and love at the 2000 themed music event!",
   },
   {
     original: meAndHer,
     thumbnail: meAndHer,
-    description: "description of image 2",
+    description: "Tatiana and me at the Ice bar in Vegas!",
   },
   {
     original: chapo,
     thumbnail: chapo,
-    description: "description of image 3",
+    description: "Chapo being crazy",
   },
   {
     original: meAndLove,
     thumbnail: meAndLove,
-    description: "description of image 4",
+    description: "Our first time at Disney together!",
   },
 ];
 
@@ -52,6 +52,12 @@ const PhotoGallery = () => {
 
   return (
     <div>
+
+    <div>
+      <h2>Our story</h2>
+      <p>this is our life gallery showing all our great times with a little backstory!</p>
+    </div>
+
       <Masonry
         breakpointCols={breakPointColObj}
         className="masonry-grid"
@@ -62,7 +68,7 @@ const PhotoGallery = () => {
             <img
               src={image.thumbnail}
               alt={`image ${index + 1}`}
-              style={{ width: "100%", cursor: "pointer" }}
+              style={{ width: "75%", cursor: "pointer" }}
               onClick={() => openGallery(index)}
             />
           </div>
@@ -71,14 +77,15 @@ const PhotoGallery = () => {
 
       {galleryOpen && (
         <Gallery
+        className="gallery-container"
           items={images}
           showThumbnails={true}
-          showPlayButton={true}
+          showPlayButton={false}
           showFullscreenButton={true}
           showNav={true}
           startIndex={selectedImageIndex}
           isOpen={galleryOpen}
-          onclose={closeGallery}
+          onClose={closeGallery}
         />
       )}
     </div>
