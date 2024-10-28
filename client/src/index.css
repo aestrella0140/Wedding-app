@@ -79,7 +79,6 @@ body {
 
 .home.container {
   padding: 20px;
-  background-color: #7c6a93;
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
@@ -91,7 +90,6 @@ body {
 .topper {
   width: 500px;
   height: auto;
-  background-color: var(--secondary-color);
 }
 
 .home h1 {
@@ -108,7 +106,6 @@ body {
 }
 
 .home-link {
-  background-color: var(--secondary-color);
   width: 88%;
   max-width: 600px;
   margin: 0 auto;
@@ -268,6 +265,53 @@ form button:hover {
   width: 75%;
   /* cursor: pointer; */
 }
+
+.Gallery {
+  width: 88%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Gallery ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.Gallery li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.Gallery li::after {
+  content: '|';
+  position: absolute;
+  right: -10px;
+}
+
+.Gallery li:last-child::after {
+  content: '';
+}
+
+.Gallery a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Gallery a:hover {
+  background-color: var(--accent-color);
+  color: var(--hover-text-color);
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {

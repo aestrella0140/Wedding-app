@@ -7,6 +7,9 @@ import meAndHer from "../assets/meAndHer.jpeg";
 import meAndLove from "../assets/meAndLove.jpeg";
 import chapo from "../assets/chapo1.jpeg";
 
+import styles from './homePage.module.css';
+import { Link } from "react-router-dom";
+
 const images = [
   {
     original: us,
@@ -51,12 +54,27 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div>
+    <main className='bg-dark'>
 
-    <div>
-      <h2>Our story</h2>
+    <div className="gallery-header">
+      <h2>Our Gallery</h2>
       <p>this is our life gallery showing all our great times with a little backstory!</p>
     </div>
+
+    <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
+        <ul className="d-flex justifycontent-center list-unstyled">
+          <li className="mx-3">
+            <Link to='/HomePage'>Home</Link>
+          </li>
+          <li className="mx-3">
+            <Link to="/Story" >Share your Story</Link>
+          </li>
+          
+          <li className="mx-3">
+            <Link to='/RSVP' >RSVP</Link>
+          </li>
+        </ul>
+      </nav>
 
       <Masonry
         breakpointCols={breakPointColObj}
@@ -88,7 +106,7 @@ const PhotoGallery = () => {
           onClose={closeGallery}
         />
       )}
-    </div>
+    </main>
   );
 };
 
