@@ -263,7 +263,13 @@ form button:hover {
 
 .gallery-container {
   width: 75%;
-  /* cursor: pointer; */
+}
+
+.gallery-h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  padding: 20px 0 0 20px;
+  margin-bottom: 20px;
 }
 
 .Gallery {
@@ -275,11 +281,13 @@ form button:hover {
 }
 
 .Gallery ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0;
+ position: fixed;
+ top: 0;
+ right: 0;
+ display: flex;
+ justify-content: right;
+ margin: 20px 0;
+ padding: 10px;
 }
 
 .Gallery li {

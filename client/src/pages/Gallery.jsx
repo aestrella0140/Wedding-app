@@ -54,15 +54,15 @@ const PhotoGallery = () => {
   };
 
   return (
-    <main className='bg-dark'>
+    <main className="bg-dark">
 
     <div className="gallery-header">
-      <h2>Our Gallery</h2>
-      <p>this is our life gallery showing all our great times with a little backstory!</p>
+      <h2 className="gallery-h2">Estrella Life Photos</h2>
+      <p>Click on the images and browse the gallery, gives a little little backstory!</p>
     </div>
 
     <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
-        <ul className="d-flex justifycontent-center list-unstyled">
+        <ul className="d-flex  list-unstyled">
           <li className="mx-3">
             <Link to='/HomePage'>Home</Link>
           </li>
