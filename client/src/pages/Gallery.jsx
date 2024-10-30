@@ -7,7 +7,7 @@ import meAndHer from "../assets/meAndHer.jpeg";
 import meAndLove from "../assets/meAndLove.jpeg";
 import chapo from "../assets/chapo1.jpeg";
 
-import styles from './homePage.module.css';
+import styles from "./homePage.module.css";
 import { Link } from "react-router-dom";
 
 const images = [
@@ -55,23 +55,25 @@ const PhotoGallery = () => {
 
   return (
     <main className="bg-dark">
+      <div className="gallery-header">
+        <h2 className="gallery-h2">Estrella Life Photos</h2>
+        <p>
+          Click on the images and browse the gallery, gives a little little
+          backstory!
+        </p>
+      </div>
 
-    <div className="gallery-header">
-      <h2 className="gallery-h2">Estrella Life Photos</h2>
-      <p>Click on the images and browse the gallery, gives a little little backstory!</p>
-    </div>
-
-    <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
+      <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
         <ul className="d-flex  list-unstyled">
           <li className="mx-3">
-            <Link to='/HomePage'>Home</Link>
+            <Link to="/HomePage">Home</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Story" >Share your Story</Link>
+            <Link to="/Story">Share your Story</Link>
           </li>
-          
+
           <li className="mx-3">
-            <Link to='/RSVP' >RSVP</Link>
+            <Link to="/RSVP">RSVP</Link>
           </li>
         </ul>
       </nav>
@@ -95,7 +97,7 @@ const PhotoGallery = () => {
 
       {galleryOpen && (
         <Gallery
-        className="gallery-container"
+          className="gallery-container"
           items={images}
           showThumbnails={true}
           showPlayButton={false}
