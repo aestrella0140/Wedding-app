@@ -99,7 +99,7 @@ const Rsvp = () => {
               </div>
 
               <div>
-                <label htmlFor="guests"> List of Guests</label>
+                <label htmlFor="guests"> Number of Guests</label>
                 <Field type="number" id="guests" name="guests" />
                 <ErrorMessage name="guests" component="div" className="error" />
               </div>
