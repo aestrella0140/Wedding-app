@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Story from "./pages/Story.jsx";
 import Rsvp from './pages/RSVP.jsx';
+import DirectionsMap from "./pages/Event.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       path: '/HomePage',
       element: <HomePage />,
     },
+    {
+      path: '/Event',
+      element: <DirectionsMap />,
+    }
     ],
   },
 ]);
