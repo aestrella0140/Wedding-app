@@ -18,14 +18,17 @@ const homePage = () => {
           <li className="mx-3">
             <Link to="/HomePage">Home</Link>
           </li>
-          <li className="mx-3">
+          {/* <li className="mx-3">
             <Link to="/Story">Share your Story</Link>
-          </li>
+          </li> */}
           <li className="mx-3">
             <Link to="/Gallery">Gallery</Link>
           </li>
           <li className="mx-3">
             <Link to="/RSVP">RSVP</Link>
+          </li>
+          <li className="mx-3">
+            <Link to="/Event">Directions</Link>
           </li>
         </ul>
       </nav>

@@ -13,7 +13,9 @@ const DirectionsMap = () => {
   const [origin, setOrigin] = useState("");
 
   const destination = "wedding venue Adrress or place"; // replace with wedding venue address
-  const googleKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+  const googleKey = import.meta.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
+  console.log("Google Maps API Key:", googleKey);
 
   const handleLoad = (autocompleteInstance) => {
     setAutocomplete(autocompleteInstance);
