@@ -13,7 +13,7 @@ const DirectionsMap = () => {
   const [origin, setOrigin] = useState("");
 
   const destination = "wedding venue Adrress or place"; // replace with wedding venue address
-  const googleKey = import.meta.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+  const googleKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
   console.log("Google Maps API Key:", googleKey);
 
@@ -38,8 +38,10 @@ const DirectionsMap = () => {
     }
   };
 
+  const googleLibraries = ['places'];
+
   return (
-    <LoadScript googleMapsApiKey={googleKey} libraries={["places"]}>
+    <LoadScript googleMapsApiKey={googleKey} libraries={googleLibraries}>
       <div>
         <h2>Get Directions to our wedding</h2>
 
