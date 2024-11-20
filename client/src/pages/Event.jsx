@@ -42,52 +42,48 @@ const DirectionsMap = React.memo(() => {
     }
   }, []);
 
-  const MapCenter = useMemo(
-    () => ({
+  const MapCenter = useMemo(() => ({
       lat: 33.5943,
       lng: -112.3284,
-    }),
-    []
-  );
+    }), []);
 
   return (
-      <LoadScript googleMapsApiKey={googleKey} libraries={libraries}>
+    <LoadScript googleMapsApiKey={googleKey} libraries={libraries}>
+      <div>
+        <h2>Get Directions to our wedding</h2>
 
-    <div>
-      <h2>Get Directions to our wedding</h2>
-
-      <Autocomplete onLoad={handleLoad} onPlaceChanged={handlePlaceChanged}>
-        <input
-          type="text"
-          placeholder="Enter your location here"
-          style={{ width: "300px", padding: "10px", marginBottom: "10px" }}
+        <Autocomplete onLoad={handleLoad} onPlaceChanged={handlePlaceChanged}>
+          <input
+            type="text"
+            placeholder="Enter your location here"
+            style={{ width: "300px", padding: "10px", marginBottom: "10px" }}
           />
-      </Autocomplete>
+        </Autocomplete>
 
-      <GoogleMap
-        mapContainerStyle={{ width: "600px", height: "450px" }}
-        center={MapCenter} // need lat and long of venue
-        zoom={10}
+        <GoogleMap
+          mapContainerStyle={{ width: "600px", height: "450px" }}
+          center={MapCenter} // need lat and long of venue
+          zoom={10}
         >
-        {showDirections && origin && (
-          <DirectionsService
-          options={{
-            origin,
-            destination,
-            travelMode: "DRIVING",
-          }}
-          callback={(response) => {
-            // console.log("Calling directions API");
-            directionsCallBack(response);
-          }}
-          onUnmount={() => setShowDirections(false)}
-          />
-        )}
+          {showDirections && origin && (
+            <DirectionsService
+              options={{
+                origin,
+                destination,
+                travelMode: "DRIVING",
+              }}
+              callback={(response) => {
+                // console.log("Calling directions API");
+                directionsCallBack(response);
+              }}
+              onUnmount={() => setShowDirections(false)}
+            />
+          )}
 
-        {directions && <DirectionsRenderer options={{ directions }} />}
-      </GoogleMap>
-    </div>
-        </LoadScript>
+          {directions && <DirectionsRenderer options={{ directions }} />}
+        </GoogleMap>
+      </div>
+    </LoadScript>
   );
 });
 

@@ -70,6 +70,9 @@ const Rsvp = () => {
         {({ isSubmitting }) => {
           return (
             <Form>
+              <h3 >
+                RSVP
+              </h3>
               <div>
                 <label htmlFor="name">Name</label>
                 <Field type="text" name="name" id="name" />
