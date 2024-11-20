@@ -23,9 +23,9 @@ const Rsvp = () => {
   });
 
   return (
-    <div>
-      <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
-        <ul className="d-flex list-unstyled">
+    <div className={`${styles.container} py-5`} style={{ backgroundColor: "#f8f9fa"}}>
+      <nav className={`${styles.nav} navbar bg-light shadow-sm mb-4 p-1 rounded mx-auto`}>
+        <ul className="navbar-nav d-flex flex-row justify-content-center">
           <li className="mx-3">
             <Link to="/HomePage">Home</Link>
           </li>
@@ -74,15 +74,15 @@ const Rsvp = () => {
                 RSVP
               </h3>
               <div>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Name:</label>
                 <Field type="text" name="name" id="name" />
                 <ErrorMessage name="name" component="div" className="error" />
               </div>
 
               <div>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email:</label>
                 <Field type="text" name="email" id="email" />
-                <ErrorMessage name="email" component="div" />
+                <ErrorMessage name="email" component="div" className="error" />
               </div>
 
               <div>
@@ -102,14 +102,16 @@ const Rsvp = () => {
               </div>
 
               <div>
-                <label htmlFor="guests"> Number of Guests</label>
+                <label htmlFor="guests"> Number of Guests:</label>
                 <Field type="number" id="guests" name="guests" />
                 <ErrorMessage name="guests" component="div" className="error" />
               </div>
 
+                <p className="form-p">Your address is so we can send the wedding invitation! if you dont want an invitation sent to you dont fill out the address section.</p>
+
               <div>
                 <div>
-                  <label htmlFor="address"> Street Address</label>
+                  <label htmlFor="address"> Street Address:</label>
                   <Field type="test" id="address" name="address" />
                   <ErrorMessage
                     name="address"
