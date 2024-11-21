@@ -24,21 +24,25 @@ const Rsvp = () => {
 
   return (
     <div className={`${styles.container} py-5`} style={{ backgroundColor: "#f8f9fa"}}>
-      <nav className={`${styles.nav} navbar bg-light shadow-sm mb-4 p-1 rounded mx-auto`}>
+      <nav className={`${styles.nav} navbar shadow-sm mb-4 p-1 rounded mx-auto`}>
         <ul className="navbar-nav d-flex flex-row justify-content-center">
-          <li className="mx-3">
-            <Link to="/HomePage">Home</Link>
+          <li className="nav-item mx-3">
+            <Link to="/HomePage" className="nav-link">Home</Link>
           </li>
-          <li className="mx-3">
-            <Link to="/Story">Share your Story</Link>
+          <li className="nav-item mx-3">
+            <Link to="/Story" className="nav-link">Share your Story</Link>
           </li>
 
-          <li className="mx-3">
-            <Link to="/Gallery">Gallery</Link>
+          <li className="nav-item mx-3">
+            <Link to="/Gallery" className="nav-link">Gallery</Link>
           </li>
         </ul>
       </nav>
 
+      <div className="card shadow-sm p-4" style={{ maxWidth: "600px", margin: "auto"}}>
+          <h3 className="text-center mb-4">
+            RSVP
+          </h3>
       <Formik
         initialValues={{
           name: "",
@@ -70,28 +74,29 @@ const Rsvp = () => {
         {({ isSubmitting }) => {
           return (
             <Form>
-              <h3 >
-                RSVP
-              </h3>
-              <div>
-                <label htmlFor="name">Name:</label>
-                <Field type="text" name="name" id="name" />
-                <ErrorMessage name="name" component="div" className="error" />
+              <div className="form-group mb-3">
+                <label htmlFor="name" className="form-label">Name:</label>
+                <Field type="text" name="name" id="name" className="form-control"/>
+                <ErrorMessage name="name" component="div" className="text-danger error" />
               </div>
 
-              <div>
-                <label htmlFor="email">Email:</label>
-                <Field type="text" name="email" id="email" />
-                <ErrorMessage name="email" component="div" className="error" />
+              <div className=" mb-3">
+                <label htmlFor="email" className="form-label">Email:</label>
+                <Field type="text" name="email" id="email" className="form-control"/>
+                <ErrorMessage name="email" component="div" className="text-danger error" />
               </div>
 
-              <div>
-                <label>Are you attending?</label>
-                <div role="group" aria-labelledby="attending">
-                  <label htmlFor="attending">Yes</label>
-                  <Field type="radio" name="attending" id="attendingYes" value="true" />
-                  <label htmlFor="attending">No</label>
-                  <Field type="radio" name="attending" id="attendingNo" value="false" />
+              <div className="form-group">
+                <label className="form-label">Are you attending?</label>
+                <div role="group" aria-labelledby="attending" className="radio-group">
+                  <div className="radio-option">
+                    <Field type="radio" name="attending" id="attendingYes" value="true" className="form-check-input" />
+                    <label htmlFor="attending" className="form-check-label">Yes</label>
+                  </div>
+                  <div className="radio-option">
+                    <Field type="radio" name="attending" id="attendingNo" value="false" className="form-check-input"/>
+                    <label htmlFor="attending" className="form-check-label">No</label>
+                  </div>
                   <ErrorMessage name="attending" component="div" />
                 </div>
                 <ErrorMessage
@@ -150,6 +155,7 @@ const Rsvp = () => {
           );
         }}
       </Formik>
+      </div>
     </div>
   );
 };

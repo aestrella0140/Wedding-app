@@ -351,6 +351,21 @@ input[type=text], input[type=number] {
   color: #000000;
 }
 
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.radio-group {
+display: flex;
+flex-direction: column;
+margin-bottom: 0.5rem;
+}
+
+.radio-option label {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #213547;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
