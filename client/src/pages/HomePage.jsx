@@ -4,9 +4,12 @@ import usThumbnail from "../assets/us_THUMBNAIL.jpg";
 import flowerTopper from "../assets/flower-topper-flipped-removebg-preview.png";
 import styles from "./homePage.module.css";
 
+import CountDown from "../components/countDown";
+
 const homePage = () => {
   return (
     <main className={styles.home}>
+      <CountDown targetDate="2026-02-23T00:00:00" />
       <img
         src={flowerTopper}
         alt="eucalyptus drawing"

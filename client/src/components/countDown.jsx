@@ -6,8 +6,8 @@ const countDown = ({ targetDate }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const now = new Date().getItem();
-            const distance = new Date(targetDate).getTime - now;
+            const now = new Date().getTime();
+            const distance = new Date(targetDate).getTime() - now;
 
             if (distance < 0) {
                 clearInterval(interval);
