@@ -23,8 +23,8 @@ const Rsvp = () => {
   });
 
   return (
-    <div className={`${styles.container} py-5`} style={{ backgroundColor: "#f8f9fa"}}>
-      <nav className={`${styles.nav} navbar shadow-sm mb-4 p-1 rounded mx-auto`}>
+    <div className={`${styles.container} py-5 `} style={{ backgroundColor: "#4d634e"}}>
+      <nav className={`${styles.nav} navbar shadow-sm mb-4 p-1 mx-auto p-2`} style={{ backgroundColor: "#f8f9fa"}}>
         <ul className="navbar-nav d-flex flex-row justify-content-center">
           <li className="nav-item mx-3">
             <Link to="/HomePage" className="nav-link">Home</Link>
@@ -39,7 +39,7 @@ const Rsvp = () => {
         </ul>
       </nav>
 
-      <div className="card shadow-sm p-4" style={{ maxWidth: "600px", margin: "auto"}}>
+      <div className="card shadow-xl p-4 mt-3" style={{ maxWidth: "600px", margin: "auto"}}>
           <h3 className="text-center mb-4">
             RSVP
           </h3>
@@ -112,7 +112,7 @@ const Rsvp = () => {
                 <ErrorMessage name="guests" component="div" className="error" />
               </div>
 
-                <p className="form-p">Your address is so we can send the wedding invitation! if you dont want an invitation sent to you dont fill out the address section.</p>
+                <p className="form-p">Your address is so we can send the wedding invitations! if you dont want an invitation sent to you dont fill out the address section.</p>
 
               <div>
                 <div>

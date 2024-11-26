@@ -321,6 +321,18 @@ form button:hover {
 
 /*RSVP FORM*/
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  border-bottom: thick solid;
+}
+
+.nav-link {
+  color: #000000;
+}
+
 h3 {
   display: flex;
   justify-content: center;
@@ -345,8 +357,6 @@ input[type=text]:focus, input[type=number]:focus {
   border-bottom: 1px solid #4979B7;
   outline: none;
 }
-
-form {}
 
 .form-p {
   color: #000000;
