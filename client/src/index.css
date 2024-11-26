@@ -72,25 +72,6 @@ body {
 }
 
 /*homepage*/ 
-.home {
-  text-align: center;
-  padding: 20px;
-}
-
-.home.container {
-  padding: 20px;
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-
-.topper {
-  width: 500px;
-  height: auto;
-}
 
 .home h1 {
   font-family: 'Great Vibes', cursive;
