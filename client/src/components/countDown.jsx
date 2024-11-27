@@ -26,7 +26,7 @@ const countDown = ({ targetDate }) => {
     }, [targetDate]);
 
     return (
-        <div>
+        <div className="countdown-container">
             <p>{timeLeft}</p>
         </div>
     )
