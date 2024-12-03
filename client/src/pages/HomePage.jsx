@@ -9,7 +9,6 @@ import CountDown from "../components/countDown";
 const homePage = () => {
   return (
     <main className={styles.home}>
-      <CountDown targetDate="2026-02-23T00:00:00" />
       <img
         src={flowerTopper}
         alt="eucalyptus drawing"
@@ -33,18 +32,15 @@ const homePage = () => {
         </ul>
       </nav>
 
-      <div className="mx-4">
-        <p className="lead">Feburary 23, 2026 Phoenix, AZ</p>
-      </div>
-      {/*short paragraph*/}
-      <section className={styles.story}>
+      <div className="story">
+        <CountDown targetDate="2026-02-23T00:00:00" />
         <p>
-          We first met in preschool. I remember Tatiana's dad telling me to
-          always protect her on the first day of kindergarden. Even then I knew
-          we would be friends from then on.
+          We're so excited to celebrate our special day with all of you. Here,
+          you'll find everything you need to know about our big day, from event
+          details to RSVP and more. Thank you for being part of our journey — we
+          can't wait to see you on February 23, 2026!
         </p>
-      </section>
-
+      </div>
       <section className={`${styles.imageSection} home-image my-4`}>
         <img src={usThumbnail} alt="Adrian and Tatiana.." className="img" />
       </section>
