@@ -401,6 +401,17 @@ margin-bottom: 0.5rem;
   color: #213547;
 }
 
+/*Registry page*/
+
+.registry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery.jsx";
 import Story from "./pages/Story.jsx";
 import Rsvp from './pages/RSVP.jsx';
 import DirectionsMap from "./pages/Event.jsx";
+import Registry from "./pages/Registry.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     {
       path: '/Event',
       element: <DirectionsMap />,
+    },
+    {
+      path: '/Registry',
+      element: <Registry />,
     }
     ],
   },

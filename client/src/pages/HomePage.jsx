@@ -29,6 +29,9 @@ const homePage = () => {
           <li className="mx-3">
             <Link to="/Event">Directions</Link>
           </li>
+          <li className="mx-3"> 
+            <Link to="/Registry">Registry</Link>
+          </li>
         </ul>
       </nav>
 
