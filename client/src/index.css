@@ -415,7 +415,22 @@ margin-bottom: 0.5rem;
   margin: 0 auto;
   color: white;
   padding: 20px;
+  font-size: 1.3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.registry ul {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.registry ul li {
+  list-style: none;
+  margin-right: 65px;
+  border: solid 2px #f0d4d4;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 
