@@ -31,7 +31,7 @@ export const QUERY_ME = gql`
 `;
 
 export const QUERY_GETRSVPS = gql`
-  query allRsvps {
+  query GetRSVPs {
     rsvps {
       _id
       name
