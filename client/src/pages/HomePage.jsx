@@ -9,6 +9,9 @@ import CountDown from "../components/countDown";
 const homePage = () => {
   return (
     <main className={styles.home}>
+      <nav className="admin">
+        <Link className="ad-link" to="/login">Admin</Link>
+      </nav>
       <img
         src={flowerTopper}
         alt="eucalyptus drawing"
