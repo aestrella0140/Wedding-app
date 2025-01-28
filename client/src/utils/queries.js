@@ -30,7 +30,7 @@ export const QUERY_ME = gql`
   }
 `;
 
-export const QUERY_GETRSVPS = gql`
+export const GET_RSVPS = gql`
   query GetRSVPs {
     rsvps {
       _id
