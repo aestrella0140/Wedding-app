@@ -15,26 +15,26 @@ const SignupForm = () => {
       email: "",
       password: "",
     },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-      addUser({ variables: values })
-        .then((response) => {
-          const { data } = response;
-          const { email, password } = values;
-          return Auth.login(data.addUser.token);
-        })
-        .then((token) => {
-          console.log("received token:", token);
-          if (!token || typeof token !== "string") {
-            throw new Error("invalid token");
-          }
-          console.log(response);
-          console.log("User created and logged in");
-        })
-        .catch((error) => {
-          console.log("error:", error);
-          console.log("couldnt create user or login in");
-        });
+
+    validate: (values) => {
+      const errors = {};
+      if(!values.firstName) errors.firstName = "FirstName required";
+      if(!values.lastName) errors.lastName = "lastName required";
+      if(!values.email) errors.email = "email required";
+      if(!values.password) errors.password = "password required";
+      else if (values.password.length < 8) errors.password = "password must be atleast 8 characters";
+      return errors;
+    },
+    onSubmit: async (values, { setSubmitting }) => {
+      try {
+        const { data } = await addUser({ variables: values });
+        Auth.login(data.addUser.token);
+        console.log("User created and logged in");
+      } catch (error) {
+        console.error("Error creating user:", error);
+      } finally {
+        setSubmitting(false);
+      }
     },
   });
 
@@ -44,24 +44,29 @@ const SignupForm = () => {
         <h2>signup here</h2>
         <label>First Name</label>
         <input
-          type='firstName'
+          type='text'
           name='firstName'
           id='firstName'
           placeholder='enter first name here'
           onChange={formik.handleChange}
           value={formik.values.firstName}
         />
+        {formik.touched.firstName && formik.errors.firstName && (
+          <div style={{ color: "red" }}>{formik.errors.firstName}</div>
+        )}
 
         <label>Last Name</label>
         <input
-          type='lastName'
+          type='text'
           name='lastName'
           id='lastName'
           placeholder='enter last name here'
           onChange={formik.handleChange} 
           value={formik.values.lastName}
         />
-
+        {formik.touched.lastName && formik.errors.lastName && (
+          <div style={{ color: "red" }}>{formik.errors.lastName}</div>
+        )}
         <label>Email</label>
         <input
           type='email'
@@ -71,7 +76,9 @@ const SignupForm = () => {
           onChange={formik.handleChange}
           value={formik.values.email}
         />
-
+        {formik.touched.email && formik.errors.email && (
+          <div style={{ color: "red" }}>{formik.errors.email}</div>
+        )}
         <label>Password</label>
         <input
           type='password'
@@ -81,8 +88,13 @@ const SignupForm = () => {
           onChange={formik.handleChange}
           value={formik.values.password}
         />
+        {formik.touched.password && formik.errors.password && (
+          <div style={{ color: "red" }}>{formik.errors.password}</div>
+        )}
         <div>
-          <button type="submit">submit</button>
+          <button type="submit" disabled={formik.isSubmitting || loading}>
+            {loading ? "Submitting..." : "Submit"}
+          </button>
         </div>
       </form>
     </div>
