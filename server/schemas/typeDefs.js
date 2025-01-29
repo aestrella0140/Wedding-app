@@ -1,14 +1,14 @@
 const typeDefs = `
 type User {
-_id: ID
-firstName: String
-lastName: String
-email: String
+_id: ID!
+firstName: String!
+lastName: String!
+email: String!
 }
 
 type Auth {
 token: ID!
-type: String
+type: String!
 }
 
 type Error {

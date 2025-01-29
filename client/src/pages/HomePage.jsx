@@ -10,7 +10,18 @@ const homePage = () => {
   return (
     <main className={styles.home}>
       <nav className="admin">
-        <Link className="ad-link" to="/login">Admin</Link>
+        <ul>
+          <li>
+            <Link className="ad-link" to="/login">
+              Admin
+            </Link>
+          </li>
+          <li>
+            <Link className="ad-link" to="/signup">
+            signup
+            </Link>
+          </li>
+        </ul>
       </nav>
       <img
         src={flowerTopper}
@@ -32,7 +43,7 @@ const homePage = () => {
           <li className="mx-3">
             <Link to="/Event">Directions</Link>
           </li>
-          <li className="mx-3"> 
+          <li className="mx-3">
             <Link to="/Registry">Registry</Link>
           </li>
         </ul>

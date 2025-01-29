@@ -81,6 +81,9 @@ const SignupForm = () => {
           onChange={formik.handleChange}
           value={formik.values.password}
         />
+        <div>
+          <button type="submit">submit</button>
+        </div>
       </form>
     </div>
   );
