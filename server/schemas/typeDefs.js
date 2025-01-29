@@ -8,7 +8,7 @@ email: String!
 
 type Auth {
 token: ID!
-type: String!
+user: User
 }
 
 type Error {

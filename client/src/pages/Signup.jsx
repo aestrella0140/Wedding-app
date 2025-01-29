@@ -26,6 +26,7 @@ const SignupForm = () => {
       return errors;
     },
     onSubmit: async (values, { setSubmitting }) => {
+      console.log("submitting values:", values)
       try {
         const { data } = await addUser({ variables: values });
         Auth.login(data.addUser.token);
