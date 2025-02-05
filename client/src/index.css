@@ -449,6 +449,47 @@ margin-bottom: 0.5rem;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
 }
+/*admin..jsx*/
+.Admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  height: 100vh;
+  padding: 20px;
+}
+
+.Admin table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Admin table th,
+.Admin table tr {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+
+.Admin table th {
+  background-color: black;
+}
+
+.Admin table td {
+  text-align: left;
+}
+
+.Admin table tbody:nth-child(even) {
+  background-color: #000000;
+}
+
+.Admin table tbody tr:hover {
+  border-color: #e0e0e0;
+}
+
+.Admin table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
 
 
 @media (prefers-color-scheme: light) {

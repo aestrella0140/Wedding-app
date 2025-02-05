@@ -19,7 +19,7 @@ const { loading, error, data } = useQuery(GET_RSVPS);
     }
 
     return (
-        <div>
+        <div className="Admin">
             <h1>RSVP submissions</h1>
             <table>
                 <thead>
