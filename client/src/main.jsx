@@ -12,6 +12,7 @@ import Story from "./pages/Story.jsx";
 import Rsvp from './pages/RSVP.jsx';
 import DirectionsMap from "./pages/Event.jsx";
 import Registry from "./pages/Registry.jsx";
+import Admin from "./pages/Admin.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
     {
       path: '/Registry',
       element: <Registry />,
+    },
+    {
+      path: 'Admin',
+      element: <Admin />,
     }
     ],
   },

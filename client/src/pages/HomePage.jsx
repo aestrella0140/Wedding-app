@@ -26,7 +26,7 @@ const homePage = () => {
           <ul>
             <li>
               <Link className="ad-link" to="/login">
-                Admin
+                Login
               </Link>
             </li>
             <li>
@@ -37,7 +37,12 @@ const homePage = () => {
           </ul>
         )}
         {isLoggedIn && (
-          <button onClick={handleLogout}>Logout</button>
+          <div>
+            <button onClick={handleLogout}>Logout</button>
+            <div>
+              <Link to="Admin">Admin</Link>
+            </div>
+          </div>
         )}
       </nav>
       <img
