@@ -457,6 +457,7 @@ margin-bottom: 0.5rem;
   border: 2px solid;
   height: 100vh;
   padding: 20px;
+  color: black;
 }
 
 .Admin table {
@@ -467,11 +468,11 @@ margin-bottom: 0.5rem;
 .Admin table th,
 .Admin table tr {
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
 }
 
 .Admin table th {
-  background-color: black;
+  background-color: #ccc;
 }
 
 .Admin table td {
@@ -479,16 +480,16 @@ margin-bottom: 0.5rem;
 }
 
 .Admin table tbody:nth-child(even) {
-  background-color: #000000;
+  background-color: #ccc;
 }
 
 .Admin table tbody tr:hover {
-  border-color: #e0e0e0;
+  border-color: black;
 }
 
 .Admin table td {
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
 }
 
 

@@ -60,7 +60,7 @@ const Rsvp = () => {
             variables: {
               name: values.name,
               email: values.email,
-              attending: values.attending,
+              attending: values.attending === "true",
               guests: values.guests,
               address: values.address,
               city: values.city,
@@ -94,7 +94,7 @@ const Rsvp = () => {
                     <label htmlFor="attending" className="form-check-label">Yes</label>
                   </div>
                   <div className="radio-option">
-                    <Field type="radio" name="attending" id="attendingNo" value="false" className="form-check-input"/>
+                    <Field type="radio" name="attending" id="attendingNo" value={false} className="form-check-input"/>
                     <label htmlFor="attending" className="form-check-label">No</label>
                   </div>
                   <ErrorMessage name="attending" component="div" />
