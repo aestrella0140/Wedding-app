@@ -9,7 +9,9 @@ import styles from "./homePage.module.css";
 import { Link } from "react-router-dom";
 
 const Rsvp = () => {
-  const [createRSVP, { loading }] = useMutation(CREATE_RSVP);
+  const [ createRSVP, { loading }] = useMutation(CREATE_RSVP);
+  const [ submitMessage, setSubmitMessage ] = React.useState(null);
+  const [ showMessage, SetShowMessage ] = React.useState(false);
 
   const RSVPValidationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
@@ -43,6 +45,13 @@ const Rsvp = () => {
           <h3 className="text-center mb-4">
             RSVP
           </h3>
+
+          {showMessage && (
+            <div className="alert alert-success alert-dismissible fade show" role="alert">
+              {submitMessage}
+              <button type="button" className="btn-close" onClick={() => SetShowMessage(false)}>ok</button>
+            </div>
+          )}
       <Formik
         initialValues={{
           name: "",
@@ -67,12 +76,26 @@ const Rsvp = () => {
               state: values.state,
               zip: values.zip,
             },
+          }).then(({ data, errors }) => {
+            if (errors) {
+              throw new Error("GraphQL error");
+            }
+            setSubmitMessage("RSVP submitted successfully!");
+            SetShowMessage(true);
+            resetForm();
+          }).catch(() => {
+            console.error("Mutation Error:", error);
+            setSubmitMessage("Something went wrong. Please try again.");
+            SetShowMessage(true);
+          })
+          .finally(() => {
+            setSubmitting(false);
           });
-          setSubmitting(false);
         }}
       >
         {({ isSubmitting }) => {
           return (
+            
             <Form>
               <div className="form-group mb-3">
                 <label htmlFor="name" className="form-label">Name:</label>
