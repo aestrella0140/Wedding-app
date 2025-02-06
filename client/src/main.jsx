@@ -9,7 +9,7 @@ import LoginForm from "./pages/Login.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Story from "./pages/Story.jsx";
-import Rsvp from './pages/RSVP.jsx';
+import Rsvp from "./pages/RSVP.jsx";
 import DirectionsMap from "./pages/Event.jsx";
 import Registry from "./pages/Registry.jsx";
 import Admin from "./pages/Admin.jsx";
@@ -24,41 +24,41 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/Login',
+        path: "/Login",
         element: <LoginForm />,
       },
       {
-        path: '/Signup',
+        path: "/Signup",
         element: <SignupForm />,
       },
       {
-        path: '/Gallery',
+        path: "/Gallery",
         element: <Gallery />,
       },
       {
-        path: '/Story',
+        path: "/Story",
         element: <Story />,
-      }, 
-    {
-      path: '/rsvp',
-      element: <Rsvp />,
-    },
-    {
-      path: '/HomePage',
-      element: <HomePage />,
-    },
-    {
-      path: '/Event',
-      element: <DirectionsMap />,
-    },
-    {
-      path: '/Registry',
-      element: <Registry />,
-    },
-    {
-      path: 'Admin',
-      element: <Admin />,
-    }
+      },
+      {
+        path: "/rsvp",
+        element: <Rsvp />,
+      },
+      // {
+      //   path: "/HomePage",
+      //   element: <HomePage />,
+      // },
+      {
+        path: "/Event",
+        element: <DirectionsMap />,
+      },
+      {
+        path: "/Registry",
+        element: <Registry />,
+      },
+      {
+        path: "/Admin",
+        element: <Admin />,
+      },
     ],
   },
 ]);
