@@ -66,7 +66,7 @@ const PhotoGallery = () => {
       <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
         <ul className="d-flex  list-unstyled">
           <li className="mx-3">
-            <Link to="/HomePage">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="mx-3">
             <Link to="/Story">Share your Story</Link>

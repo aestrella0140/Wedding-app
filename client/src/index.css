@@ -74,7 +74,6 @@ body {
 /*homepage*/ 
 
 .admin {
-  
   display: flex;
   position: absolute;
   top: 0;
@@ -95,10 +94,11 @@ body {
   font-size: 5em;
   margin-bottom: 20px;
   background-color: var(--secondary-color);
-  max-width: 1200px;
+  max-width: 800px;
+  text-align: center;
   width: 100%;
   border-radius: 5px;
-  padding: 0 20px;
+  padding: 10px 20px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -127,7 +127,7 @@ body {
 .home-link li::after {
   content: '|';
   position: absolute;
-  right: -10px;
+  right: -12px;
 
 }
 
@@ -161,11 +161,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.img {
-  width: 600px;
-  height: auto;
-  border-radius: 10px;
-}
 
 /*countdown component*/
 

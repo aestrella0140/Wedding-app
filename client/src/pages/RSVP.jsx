@@ -29,7 +29,7 @@ const Rsvp = () => {
       <nav className={`${styles.nav} navbar shadow-sm mb-4 p-1 mx-auto p-2`} style={{ backgroundColor: "#f8f9fa"}}>
         <ul className="navbar-nav d-flex flex-row justify-content-center">
           <li className="nav-item mx-3">
-            <Link to="/HomePage" className="nav-link">Home</Link>
+            <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item mx-3">
             <Link to="/Story" className="nav-link">Share your Story</Link>

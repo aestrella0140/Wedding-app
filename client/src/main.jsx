@@ -24,39 +24,36 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/Login",
+        path: "Login",
         element: <LoginForm />,
       },
       {
-        path: "/Signup",
+        path: "Signup",
         element: <SignupForm />,
       },
       {
-        path: "/Gallery",
+        path: "Gallery",
         element: <Gallery />,
       },
       {
-        path: "/Story",
+        path: "Story",
         element: <Story />,
       },
       {
-        path: "/rsvp",
+        path: "rsvp",
         element: <Rsvp />,
       },
-      // {
-      //   path: "/HomePage",
-      //   element: <HomePage />,
-      // },
+      
       {
-        path: "/Event",
+        path: "Event",
         element: <DirectionsMap />,
       },
       {
-        path: "/Registry",
+        path: "Registry",
         element: <Registry />,
       },
       {
-        path: "/Admin",
+        path: "Admin",
         element: <Admin />,
       },
     ],

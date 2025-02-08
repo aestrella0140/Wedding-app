@@ -7,7 +7,7 @@ import styles from "./homePage.module.css";
 
 import CountDown from "../components/countDown";
 
-const homePage = () => {
+const HomePage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -23,20 +23,22 @@ const homePage = () => {
     <main className={styles.home}>
       <nav className="admin">
         {!isLoggedIn && (
-          <ul>
-            <li>
-              <Link className="ad-link" to="/login">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link className="ad-link" to="/signup">
-                signup
-              </Link>
-            </li>
-          </ul>
+          <div>
+            <ul>
+              <li>
+                <Link className="ad-link" to="login">
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link className="ad-link" to="signup">
+                  signup
+                </Link>
+              </li>
+            </ul>
+          </div>
         )}
-        {isLoggedIn && (
+        {isLoggedIn && ( 
           <div>
             <button onClick={handleLogout}>Logout</button>
             <div>
@@ -54,7 +56,7 @@ const homePage = () => {
       <nav className={`${styles.nav} home-link text-white p-1 rounded mx-auto`}>
         <ul className="d-flex justifycontent-center list-unstyled">
           <li className="mx-3">
-            <Link to="/HomePage">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="mx-3">
             <Link to="/Gallery">Gallery</Link>
@@ -79,12 +81,12 @@ const homePage = () => {
           details to RSVP and more. Thank you for being part of our journey — we
           can't wait to see you on February 23, 2026!
         </p>
+        <section className={`${styles.imageSection} home-image my-4`}>
+          <img src={usThumbnail} alt="Adrian and Tatiana.." className="img" />
+        </section>
       </div>
-      <section className={`${styles.imageSection} home-image my-4`}>
-        <img src={usThumbnail} alt="Adrian and Tatiana.." className="img" />
-      </section>
     </main>
   );
 };
 
-export default homePage;
+export default HomePage;
