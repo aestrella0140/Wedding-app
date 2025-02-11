@@ -70,6 +70,9 @@ const HomePage = () => {
           <li className="mx-3">
             <Link to="/Registry">Registry</Link>
           </li>
+          <li className="mx-3">
+            <Link to="/Story">Story</Link>
+          </li>
         </ul>
       </nav>
 
