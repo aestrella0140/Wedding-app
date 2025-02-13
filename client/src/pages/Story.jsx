@@ -2,32 +2,129 @@ import React from "react";
 
 const Story = () => {
   return (
-    <div>
+    <article className="OurStory">
+      <h2>How it began</h2>
       <p>
-      Our journey together started all the way back in Pre-K at Killip Elementary, and from the very beginning, we were inseparable. We continued into Kindergarten together at South Beaver Elementary, where, on the first day, Tatiana’s dad jokingly (or maybe seriously) told me to protect his daughter. That small moment set the foundation for a lifelong connection.
-
-Even as little kids, we were always partners in crime. We loved playing at the water tub, and we refused to let any of the other kids have a turn. Our friendship stayed strong through first grade when we had the same teacher, though Tatiana was always ahead of the class while I (Adrian) was still struggling to read. Then, life took us in different directions—I moved away after first grade, and for years, we didn’t see each other.
-
-That all changed in eighth grade. Our parents, who had mutual friends, got together one night, and by chance, we found ourselves hanging out at the local park. It was the first time we had seen each other in years, but it felt like no time had passed. That night is also when we both witnessed one of my dad’s funniest drunk moments—while trying to get him into the car, he told us he had a secret. When we leaned in, expecting something big, he just grumbled in a deep voice, “I’m Batman.”
-
-From then on, Tatiana started hanging out with my sister and me on the weekends, and over time, we got closer. It started with small things—sitting next to each other a little longer, lingering conversations, and eventually, secretly holding hands when no one was looking. One night, while we were sitting on the couch, my dad was sleeping but happened to wake up and see us holding hands. He didn’t say anything at the moment, but the next day, he made sure to let us know he had caught us.
-
-Going into freshman year, we officially started dating for the first time. It lasted about a month… and then I (Adrian) completely crashed and burned our relationship. I was awkward, didn’t know how to talk to Tatiana, and, well, I was pretty boring. But even after that, we remained friends—though we didn’t talk much during freshman year. By sophomore year, we reconnected as friends, but with both of us involved in sports and clubs, we never really had time to hang out outside of school.
-
-Junior year was even busier. Tatiana was working at Starbucks, doing Honor Guard, and balancing all honors classes, while I was focused on training for wrestling and recovering from a torn ACL. That summer, I had the opportunity to join Uncle Richard’s Young Lions team for Greco-Roman wrestling and spent my time training in Denmark and Germany. We barely saw each other that whole year.
-
-Then, more than halfway through senior year, something changed. A mutual friend decided to start pulling the strings to get us back together. Eventually, we went on our first official date—Castles and Coasters. It was supposed to be a double date with my sister and her boyfriend, but they dropped out at the last minute. I was so nervous that I begged my sister to come anyway, but luckily, she and Tatiana were already friends, so she tagged along. That night was special—it felt effortless, like we had known each other forever, and from that point on, we were always together.
-
-Every weekend, we were either at hookah lounges or hanging out at our friends’ houses, making the most of our last few months of high school. But as graduation got closer, reality set in. Tatiana wanted to join the Air Force, while I had no idea what I wanted to do with my life. In the end, we both decided to start working instead of heading straight into school. I started working at Gore, and for a while, we settled into a routine—me at Gore, Tatiana at Starbucks.
-
-Then COVID hit. Everything changed, and suddenly, we were spending all of our time together. Tatiana left Starbucks and started working at Gore, too. When our first anniversary came around, we decided to get an Airbnb in Prescott, AZ, for a weekend getaway. It was supposed to be a romantic trip, but the moment we arrived, we realized that Prescott wasn’t exactly the most diverse place. People stared at us like we didn’t belong, and we quickly decided to spend most of our time inside instead of exploring the town. But honestly, that made the trip even more special—we cooked for each other, had deep conversations, and created some of our favorite memories.
-
-On the second to last day, we planned to drive up to Sedona. Somehow, we accidentally took the back route through Jerome and Cottonwood, which led to some of the steepest roads we had ever driven on—right as thick fog rolled in. At one point, our brakes were so hot we could smell them. But we made it, and once we got to Sedona, the stress of the drive was worth it. It was another perfect day.
-
-After that, the world went into full lockdown. But we didn’t mind. We spent every single day together, growing closer than ever.
+        Our journey began long before we even realized it. We first met in Pre-K
+        at Killip Elementary and continued into Kindergarten at South Beaver
+        Elementary. On the very first day, Tatiana’s dad told Adrian to protect
+        his daughter—a responsibility he took seriously, even if it mostly meant
+        playing together at the water tub and not letting the other kids have a
+        turn. We stayed friends through first grade, sharing a teacher and many
+        fun moments, even though Tatiana was always ahead of the class while
+        Adrian was still learning to read. Life took us in different directions
+        after first grade, and we lost touch. It wasn’t until eighth grade that
+        fate brought us back together. Our parents, who were mutual friends, got
+        together one night, and for the first time in years, we saw each other
+        again. That night, we hung out at the local park, and as our parents
+        enjoyed their drinks, Adrian’s dad—completely drunk—declared in his best
+        Batman voice that he had a secret… he was Batman. It was a hilarious
+        moment that marked the beginning of our renewed friendship. Tatiana
+        started hanging out with Adrian’s sister, and soon, she was coming over
+        every weekend, strengthening the bond between us.
       </p>
-    </div>
-  )    
+      <h2>reconnecting</h2>
+      <p>
+        During those visits, Adrian and Tatiana grew closer, secretly holding
+        hands when no one was looking. One night, while sitting on the couch
+        holding hands, Adrian’s dad woke up and saw us but said nothing until
+        the next day. Leading up to freshman year, we finally started
+        dating—though only for about a month. Adrian, being awkward and not
+        knowing how to talk to Tatiana, unintentionally crashed and burned the
+        relationship by simply being too quiet. Despite this, we remained
+        friends, though not as close during freshman year. By sophomore year, we
+        reconnected and talked as friends again. With both of us busy in sports
+        and clubs, we didn’t hang out often, but it was nice to have each other
+        to talk to. Junior year got even busier—Tatiana took on Starbucks, honor
+        guard, and honors classes, while Adrian was focused on wrestling,
+        recovering from a torn ACL, and training for Greco-Roman wrestling. That
+        summer, Adrian joined Uncle Richard’s Young Lions team, training in
+        Denmark and Germany. We barely saw each other, but toward the end of
+        senior year, our paths crossed again.
+      </p>
+      <h2>realigning</h2>
+      <p>
+        With a little help from a mutual friend playing matchmaker, we finally
+        went on our first real date. Castles and Coasters was supposed to be a
+        double date with Adrian’s sister and her boyfriend, but they bailed last
+        minute. Nervous as ever, Adrian begged his sister to still come along.
+        Fortunately, Tatiana and Gabby were already friends, so she tagged along
+        instead. From that day, we were inseparable. We spent every weekend
+        together, going to hookah lounges and hanging out at friends' houses.
+      </p>
+      <h2>New beginings</h2>
+      <p>
+        As graduation neared, we started planning for the future. Tatiana wanted
+        to join the Air Force, while Adrian was unsure of his next steps. We
+        both started working—Tatiana at Starbucks and Adrian at Gore. When COVID
+        hit, Tatiana joined Gore too, bringing us even closer. Our one-year
+        anniversary came, and we decided to get an Airbnb in Prescott, AZ. The
+        trip was memorable—not just because of our time together, but also
+        because of the odd stares we received from locals. Feeling out of place,
+        we stayed inside, cooking for each other and having deep conversations.
+        On our second-to-last day, we took a trip to Sedona but accidentally
+        drove the back way through Jerome and Cottonwood. The thick fog and
+        steep roads were nerve-wracking, and our brakes overheated, but we made
+        it safely and had an amazing time.
+      </p>
+      <h2>Family</h2>
+      <p>
+        During the lockdown, we found comfort in each other and binge-watched
+        countless anime and Studio Ghibli movies—films we still rewatch today.
+        However, this time was also difficult. Adrian’s dad fell seriously ill,
+        and we spent most of our time at his parents’ house helping take care of
+        him. On April 9, 2021, Adrian’s dad passed away, a loss that deeply
+        impacted us all but ultimately brought our families closer.
+      </p>
+      <h2>Hard Times</h2>
+      <p>
+        A few months later, we decided to get a dog together. Bruno, a tiny
+        4-pound Maltese mix, became our first pet. Unfortunately, he had parvo,
+        and we rushed him to the emergency vet multiple times, doing everything
+        we could to save him. One night, after another vet visit, we were so
+        overwhelmed that we called our moms while pulling out of the clinic’s
+        parking lot. Just as we waited at a green light, we were t-boned—our
+        first car accident, with our moms hearing everything on the phone. Bruno
+        passed away two days later, leaving us heartbroken.
+      </p>
+      <h2>Vegas!</h2>
+      <p>
+        For our third anniversary, we took our first out-of-state trip together
+        to Las Vegas, staying at The D Resort. We had no luck gambling but loved
+        the live bands on Fremont Street. We explored the Mob Museum and planned
+        a fun night out on our last day but ended up exhausted, watching the
+        SpongeBob movie instead. Still, it was an unforgettable trip.
+      </p>
+      <h2>The Big Question</h2>
+      <p>
+        By our fourth anniversary, Adrian had big plans. While in Modesto, CA,
+        for family matters, he secretly arranged a surprise picnic at Boise
+        Thompson Ranch, a beautiful tree farm. Adrian’s sister, Gabby, was in on
+        it, secretly recording as Adrian got down on one knee and proposed.
+       <strong>Tatiana said yes!</strong> Her engagement ring, featuring a stunning
+        Tsavorite garnet gem, was the perfect symbol of our journey together.
+      </p>
+      <h2>Friends</h2>
+      <p>
+        Shortly after, Adrian took a Full Stack Web Development course through
+        ASU, changing shifts at work, while Tatiana got a new car she absolutely
+        loved. We became more involved with our growing friend group and planned
+        our first group trip for Tequila Sunrise in Flagstaff. We all rented an
+        Airbnb and spent the weekend bar-hopping, with Collins Bar becoming our
+        favorite spot. Walking back home drunk was an adventure, but it was one
+        of the best times we’d had.
+      </p>
+      <h2>present</h2>
+      <p>
+        For our fifth anniversary, we planned a trip to Tucson, exploring
+        downtown, visiting quirky shops, and simply enjoying each other’s
+        company. As we look back on our journey—from childhood friends to high
+        school sweethearts, from struggles to celebrations—we know that every
+        moment has led us to where we are today. And we wouldn’t change a single
+        thing.
+      </p>
+    </article>
+  );
 };
 
 export default Story;

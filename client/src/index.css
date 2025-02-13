@@ -487,6 +487,14 @@ margin-bottom: 0.5rem;
   border: 1px solid black;
 }
 
+/*Story*/
+.OurStory {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  background-color: var(--hover-text-color);
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
