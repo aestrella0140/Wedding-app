@@ -491,8 +491,24 @@ margin-bottom: 0.5rem;
 .OurStory {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #000000;
   background-color: var(--hover-text-color);
+  padding: 3rem 1rem;
+
+}
+
+.OurStory p {
+  max-width: 800px;
+  font-size: 1.1rem;
+  font-weight: 50;
+  line-height: 1.6;
+  text-align: justify;
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 

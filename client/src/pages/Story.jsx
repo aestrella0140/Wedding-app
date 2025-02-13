@@ -101,18 +101,23 @@ const Story = () => {
         for family matters, he secretly arranged a surprise picnic at Boise
         Thompson Ranch, a beautiful tree farm. Adrian’s sister, Gabby, was in on
         it, secretly recording as Adrian got down on one knee and proposed.
-       <strong>Tatiana said yes!</strong> Her engagement ring, featuring a stunning
-        Tsavorite garnet gem, was the perfect symbol of our journey together.
+        <strong>Tatiana said yes!</strong> Her engagement ring, featuring a
+        stunning Tsavorite garnet gem, was the perfect symbol of our journey
+        together.
       </p>
       <h2>Friends</h2>
       <p>
         Shortly after, Adrian took a Full Stack Web Development course through
         ASU, changing shifts at work, while Tatiana got a new car she absolutely
-        loved. We became more involved with our growing friend group and planned
-        our first group trip for Tequila Sunrise in Flagstaff. We all rented an
-        Airbnb and spent the weekend bar-hopping, with Collins Bar becoming our
-        favorite spot. Walking back home drunk was an adventure, but it was one
-        of the best times we’d had.
+        loved. Not long after, we got a French bulldog named Chapo. He is our
+        baby, and although he has a lot of vet bills, he is the love of our
+        lives, and everyone adores him. He is a brat, but he is so loving,
+        always making us laugh with his antics and snorts. We became more
+        involved with our growing friend group and planned our first group trip
+        for Tequila Sunrise in Flagstaff. We all rented an Airbnb and spent the
+        weekend bar-hopping, with Collins Bar becoming our favorite spot.
+        Walking back home drunk was an adventure, but it was one of the best
+        times we’d had.
       </p>
       <h2>present</h2>
       <p>
