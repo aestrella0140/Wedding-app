@@ -27,12 +27,7 @@ const HomePage = () => {
             <ul>
               <li>
                 <Link className="ad-link" to="login">
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link className="ad-link" to="signup">
-                  signup
+                  Admin
                 </Link>
               </li>
             </ul>

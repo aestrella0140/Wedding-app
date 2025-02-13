@@ -1,8 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Story = () => {
   return (
     <article className="OurStory">
+      <nav className="mb-3">
+         <ul className="d-flex justifycontent-center list-unstyled">
+                  <li className="mx-3">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="mx-3">
+                    <Link to="/Gallery">Gallery</Link>
+                  </li>
+                  <li className="mx-3">
+                    <Link to="/RSVP">RSVP</Link>
+                  </li>
+                  <li className="mx-3">
+                    <Link to="/Event">Directions</Link>
+                  </li>
+                  <li className="mx-3">
+                    <Link to="/Registry">Registry</Link>
+                  </li>
+                </ul>
+      </nav>
       <h2>How it began</h2>
       <p>
         Our journey began long before we even realized it. We first met in Pre-K
