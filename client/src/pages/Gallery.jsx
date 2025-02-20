@@ -69,7 +69,7 @@ const PhotoGallery = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Story">Share your Story</Link>
+            <Link to="/Story">Our Story</Link>
           </li>
 
           <li className="mx-3">

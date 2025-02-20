@@ -32,7 +32,7 @@ const Rsvp = () => {
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item mx-3">
-            <Link to="/Story" className="nav-link">Share your Story</Link>
+            <Link to="/Story" className="nav-link">Our Story</Link>
           </li>
 
           <li className="nav-item mx-3">

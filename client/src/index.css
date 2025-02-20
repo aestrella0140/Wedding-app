@@ -493,9 +493,29 @@ margin-bottom: 0.5rem;
   align-items: center;
   flex-direction: column;
   color: #000000;
-  background-color: var(--hover-text-color);
+  background-color: var(--background-color);
   padding: 3rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+ .OurStory nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  border-bottom: thick solid;
+  background-color: var(--hover-text-color);
+ }
+
+ .OurStory-link {
+  color: #000000;
+ }
+
+
+.OurStory h2 {
+  border-style: ridge;
+  background-color: var(--hover-text-color);
+  margin: 3px;
 }
 
 .OurStory p {
@@ -508,6 +528,9 @@ margin-bottom: 0.5rem;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
+  border-style: ridge;
+  border-width: 2px;
+
 }
 
 
