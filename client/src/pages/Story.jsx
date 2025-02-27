@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import chunk from "../assets/chunk-with-bowtie.jpg";
 
 const Story = () => {
   return (
@@ -23,8 +24,8 @@ const Story = () => {
                   </li>
                 </ul>
       </nav>
+      <p className="card">
       <h2>How it began</h2>
-      <p>
         Our journey began long before we even realized it. We first met in Pre-K
         at Killip Elementary and continued into Kindergarten at South Beaver
         Elementary. On the very first day, Tatiana’s dad told Adrian to protect
@@ -43,8 +44,8 @@ const Story = () => {
         started hanging out with Adrian’s sister, and soon, she was coming over
         every weekend, strengthening the bond between us.
       </p>
+      <p className="card">
       <h2>reconnecting</h2>
-      <p>
         During those visits, Adrian and Tatiana grew closer, secretly holding
         hands when no one was looking. One night, while sitting on the couch
         holding hands, Adrian’s dad woke up and saw us but said nothing until
@@ -62,8 +63,8 @@ const Story = () => {
         Denmark and Germany. We barely saw each other, but toward the end of
         senior year, our paths crossed again.
       </p>
+      <p className="card"> 
       <h2>realigning</h2>
-      <p>
         With a little help from a mutual friend playing matchmaker, we finally
         went on our first real date. Castles and Coasters was supposed to be a
         double date with Adrian’s sister and her boyfriend, but they bailed last
@@ -72,8 +73,9 @@ const Story = () => {
         instead. From that day, we were inseparable. We spent every weekend
         together, going to hookah lounges and hanging out at friends' houses.
       </p>
+
+      <p className="card">
       <h2>New beginings</h2>
-      <p>
         As graduation neared, we started planning for the future. Tatiana wanted
         to join the Air Force, while Adrian was unsure of his next steps. We
         both started working—Tatiana at Starbucks and Adrian at Gore. When COVID
@@ -87,8 +89,9 @@ const Story = () => {
         steep roads were nerve-wracking, and our brakes overheated, but we made
         it safely and had an amazing time.
       </p>
+
+      <p className="card">
       <h2>Family</h2>
-      <p>
         During the lockdown, we found comfort in each other and binge-watched
         countless anime and Studio Ghibli movies—films we still rewatch today.
         However, this time was also difficult. Adrian’s dad fell seriously ill,
@@ -96,8 +99,9 @@ const Story = () => {
         him. On April 9, 2021, Adrian’s dad passed away, a loss that deeply
         impacted us all but ultimately brought our families closer.
       </p>
+
+      <p className="card">
       <h2>Hard Times</h2>
-      <p>
         A few months later, we decided to get a dog together. Bruno, a tiny
         4-pound Maltese mix, became our first pet. Unfortunately, he had parvo,
         and we rushed him to the emergency vet multiple times, doing everything
@@ -107,16 +111,18 @@ const Story = () => {
         first car accident, with our moms hearing everything on the phone. Bruno
         passed away two days later, leaving us heartbroken.
       </p>
+
+      <p className="card"> 
       <h2>Vegas!</h2>
-      <p>
         For our third anniversary, we took our first out-of-state trip together
         to Las Vegas, staying at The D Resort. We had no luck gambling but loved
         the live bands on Fremont Street. We explored the Mob Museum and planned
         a fun night out on our last day but ended up exhausted, watching the
         SpongeBob movie instead. Still, it was an unforgettable trip.
       </p>
+
+      <p className="card">
       <h2>The Big Question</h2>
-      <p>
         By our fourth anniversary, Adrian had big plans. While in Modesto, CA,
         for family matters, he secretly arranged a surprise picnic at Boise
         Thompson Ranch, a beautiful tree farm. Adrian’s sister, Gabby, was in on
@@ -125,8 +131,10 @@ const Story = () => {
         stunning Tsavorite garnet gem, was the perfect symbol of our journey
         together.
       </p>
-      <h2>Friends</h2>
-      <p>
+
+      <p className="card">
+        <img src={chunk} alt="french bulldog with a bowtie" />
+      <h2>Friends and dog</h2>
         Shortly after, Adrian took a Full Stack Web Development course through
         ASU, changing shifts at work, while Tatiana got a new car she absolutely
         loved. Not long after, we got a French bulldog named Chapo. He is our
@@ -139,8 +147,9 @@ const Story = () => {
         Walking back home drunk was an adventure, but it was one of the best
         times we’d had.
       </p>
+
+      <p className="card">
       <h2>present</h2>
-      <p>
         For our fifth anniversary, we planned a trip to Tucson, exploring
         downtown, visiting quirky shops, and simply enjoying each other’s
         company. As we look back on our journey—from childhood friends to high

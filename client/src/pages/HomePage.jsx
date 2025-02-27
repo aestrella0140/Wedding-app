@@ -51,9 +51,6 @@ const HomePage = () => {
       <nav className={`${styles.nav} home-link text-white p-1 rounded mx-auto`}>
         <ul className="d-flex justifycontent-center list-unstyled">
           <li className="mx-3">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="mx-3">
             <Link to="/Gallery">Gallery</Link>
           </li>
           <li className="mx-3">
@@ -66,7 +63,7 @@ const HomePage = () => {
             <Link to="/Registry">Registry</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Story">Story</Link>
+            <Link to="/Story">Our Story</Link>
           </li>
         </ul>
       </nav>

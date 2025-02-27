@@ -513,9 +513,7 @@ margin-bottom: 0.5rem;
 
 
 .OurStory h2 {
-  border-style: ridge;
-  background-color: var(--hover-text-color);
-  margin: 3px;
+  margin: 15px;
 }
 
 .OurStory p {
