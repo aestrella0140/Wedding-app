@@ -39,8 +39,8 @@ const Story = () => {
         className="row"
         style={{ width: 900 }}
       >
-        <div>
-          <div className="card p-3">
+        <div className="card">
+          <div className="p-3">
             <h2>How it began</h2>
             <p>
               Our journey began long before we even realized it. We first met in
@@ -65,8 +65,8 @@ const Story = () => {
             </p>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>reconnecting</h2>
               <p>
                 During those visits, Adrian and Tatiana grew closer, secretly
@@ -91,8 +91,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>realigning</h2>
               <p>
                 With a little help from a mutual friend playing matchmaker, we
@@ -107,8 +107,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>New beginings</h2>
               <p>
                 As graduation neared, we started planning for the future.
@@ -129,8 +129,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>Family</h2>
               <p>
                 During the lockdown, we found comfort in each other and
@@ -144,8 +144,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>Hard Times</h2>
               <p>
                 A few months later, we decided to get a dog together. Bruno, a
@@ -161,8 +161,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>Vegas!</h2>
               <p>
                 For our third anniversary, we took our first out-of-state trip
@@ -175,8 +175,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>The Big Question</h2>
               <p>
                 By our fourth anniversary, Adrian had big plans. While in
@@ -191,8 +191,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <img src={chunk} alt="french bulldog with a bowtie" />
               <h2>Friends and dog</h2>
               <p>
@@ -212,8 +212,8 @@ const Story = () => {
             </div>
           </div>
 
-          <div>
-            <div className="card p-3">
+          <div className="card">
+            <div className="p-3">
               <h2>present</h2>
               <p>
                 For our fifth anniversary, we planned a trip to Tucson,
