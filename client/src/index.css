@@ -513,32 +513,19 @@ margin-bottom: 0.5rem;
 }
 
 .OurStory .card {
-  flex:  1 1 calc(33.333% - 2rem);
-  max-width: 300px;
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 1rem;
   padding: 1rem;
-  background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-style: ridge;
-  max-width: 1000px;
-  width: 100%;
 }
 
 .OurStory .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .OurStory p {
-  max-width: 800px;
   font-size: 1.1rem;
   font-weight: 50;
   line-height: 1.6;
@@ -546,7 +533,6 @@ margin-bottom: 0.5rem;
   background: #fff;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
   border-style: ridge;
   border-width: 2px;
 }
