@@ -5,7 +5,7 @@ import chunk from "../assets/chunk-with-bowtie.jpg";
 const Story = () => {
   return (
     <article className="OurStory">
-      <nav className="navbar mb-4 p-2 mb-3">
+      <nav className="navbar p-2">
         <ul className="navbar-nav d-flex flex-row justify-content-center list-unstyled ">
           <li className="nav-item mx-3">
             <Link to="/" className="nav-link">
