@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import directions from "../assets/directions.png";
 
 const DirectionsMap = () => {
   return (
@@ -34,9 +35,10 @@ const DirectionsMap = () => {
                </ul>
              </nav>
       <div className="card">
+        <img src={directions} alt="Map of location of venue with hyper link" />
         <p>Click the Link to our Wedding venue for Directions!</p>
         <a
-          href="https://www.google.com/maps/dir/?api=1&destination=123+Main+St,New+York,NY"
+          href="https://www.google.com/maps/dir/?api=1&destination=246727+N+181st+Dr,Surprise,AZ"
           target="_blank"
           rel="noopener noreferrer"
         >
