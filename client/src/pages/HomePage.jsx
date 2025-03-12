@@ -47,9 +47,9 @@ const HomePage = () => {
         alt="eucalyptus drawing"
         className={styles.topper}
       />
-      <h1 className={`${styles.title} text-white rounded`}>Adrian & Tatiana</h1>
+      <h1 className={`${styles.title} rounded`}>Adrian & Tatiana</h1>
       <nav className={`${styles.nav} home-link text-white p-1 rounded mx-auto`}>
-        <ul className="d-flex justifycontent-center list-unstyled">
+        <ul className="d-flex justify-content-center list-unstyled">
           <li className="mx-3">
             <Link to="/Gallery">Gallery</Link>
           </li>
