@@ -565,6 +565,13 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 border-style: ridge;
 }
 
+/*footer*/
+.footer {
+  background-color: var(--hover-text-color);
+  max-width: 100%;
+  color: #000000;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
