@@ -352,7 +352,7 @@ form button:hover {
   top: 0;
   width: 100%;
   z-index: 1030;
-  border-bottom: thick solid;
+  border-bottom: medium solid;
 }
 
 .nav-link {
@@ -425,9 +425,24 @@ margin-bottom: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.registry .navbar {
-  background-color: var(--hover-text-color);
+.registry .card {
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-style: ridge;
 }
+
+.registry .card ul {
+  display: flex;
+  justify-content: center;
+}
+
+.registry .card li {
+  padding: 1rem;
+  list-style: none;
+}
+
 /*admin..jsx*/
 .Admin {
   display: flex;
