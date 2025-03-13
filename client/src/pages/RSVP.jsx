@@ -38,6 +38,9 @@ const Rsvp = () => {
           <li className="nav-item mx-3">
             <Link to="/Gallery" className="nav-link">Gallery</Link>
           </li>
+          <li className="nav-item mx-3">
+            <Link to="/Registry" className="nav-link">Registry</Link>
+          </li>
         </ul>
       </nav>
 

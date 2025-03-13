@@ -120,8 +120,8 @@ body {
 .home-link li::after {
   content: '|';
   position: absolute;
-  right: -14px;
-
+  right: -16px;
+  color: #000;
 }
 
 .home-link li:last-child::after {
@@ -416,28 +416,17 @@ margin-bottom: 0.5rem;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #333;
+  background-color: var(--hover-text-color);
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  color: white;
+  color: #000000;
   padding: 20px;
-  font-size: 1.3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.registry ul {
-  display: flex;
-  flex-direction: row;
-  margin: 20px;
-}
-
-.registry ul li {
-  list-style: none;
-  margin-right: 65px;
-  border: solid 2px #f0d4d4;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+.registry .navbar {
+  background-color: var(--hover-text-color);
 }
 /*admin..jsx*/
 .Admin {
@@ -565,6 +554,7 @@ border-style: ridge;
   background-color: var(--hover-text-color);
   max-width: 100%;
   color: #000000;
+  margin-top: 5px;
 }
 
 @media (prefers-color-scheme: light) {
