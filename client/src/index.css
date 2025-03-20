@@ -155,7 +155,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 /*countdown component*/
 
 .countdown-container {
@@ -554,6 +553,25 @@ margin-bottom: 0.5rem;
   border-bottom: thick solid;
   background-color: var(--hover-text-color);
   left: 0;
+}
+
+.event-link ul {
+  margin: 0;
+}
+
+.event-link a {
+  margin: 2px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: var(--background-color) 0.3s ease, color 0.3s ease; 
+}
+
+
+
+.event-link a:hover {
+  background-color: var(--background-color);
+  color: var(--hover-text-color);
 }
 
 .event .card {

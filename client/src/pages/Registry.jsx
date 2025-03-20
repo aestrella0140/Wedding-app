@@ -31,6 +31,11 @@ const Registry = () => {
               Registry
             </Link>
           </li>
+          <li className="nav-item mx-3">
+            <Link to="/RSVP" className="nav-link">
+            RSVP
+            </Link>
+          </li>
         </ul>
       </nav>
 
