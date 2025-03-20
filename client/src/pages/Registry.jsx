@@ -27,8 +27,8 @@ const Registry = () => {
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link to="/Registry" className="nav-link">
-              Registry
+            <Link to="/Event" className="nav-link">
+              Directions
             </Link>
           </li>
           <li className="nav-item mx-3">

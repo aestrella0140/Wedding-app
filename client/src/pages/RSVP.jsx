@@ -26,7 +26,7 @@ const Rsvp = () => {
 
   return (
     <div className={`${styles.container} py-5 `} style={{ backgroundColor: "#4d634e"}}>
-      <nav className={`${styles.nav} navbar shadow-sm p-1 mx-auto p-2`} style={{ backgroundColor: "#f8f9fa"}}>
+      <nav className={`${styles.nav} navbar rsvp-link shadow-sm p-1 mx-auto p-2`} style={{ backgroundColor: "#f8f9fa"}}>
         <ul className="navbar-nav d-flex flex-row justify-content-center">
           <li className="nav-item mx-3">
             <Link to="/" className="nav-link">Home</Link>
@@ -42,7 +42,7 @@ const Rsvp = () => {
             <Link to="/Registry" className="nav-link">Registry</Link>
           </li>
           <li className="nav-item mx-3">
-            <Link to="/RSVP" className="nav-link">RSVP</Link>
+            <Link to="/Event" className="nav-link">Directions</Link>
           </li>
         </ul>
       </nav>

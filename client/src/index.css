@@ -354,6 +354,17 @@ form button:hover {
   border-bottom: medium solid;
 }
 
+.rsvp-link a {
+padding: 5px;
+border-radius: 5px;
+transition: var(--background-color) 0.3s ease, color 0.3s ease;
+}
+
+.rsvp-link a:hover {
+  background-color: var(--background-color);
+  color: var(--hover-text-color);
+}
+
 .nav-link {
   color: #000000;
 }
@@ -503,6 +514,17 @@ margin-bottom: 0.5rem;
   left: 0;
  }
 
+ .OurStory-link a {
+  padding: 5px;
+  border-radius: 5px;
+  transition: var(--background-color) 0.3s ease, color 0.3s ease;
+ }
+
+ .OurStory-link a:hover {
+  background-color: var(--background-color);
+  color: var(--hover-text-color);
+ }
+
  .OurStory-link {
   color: #000000;
  }
@@ -566,8 +588,6 @@ margin-bottom: 0.5rem;
   border-radius: 5px;
   transition: var(--background-color) 0.3s ease, color 0.3s ease; 
 }
-
-
 
 .event-link a:hover {
   background-color: var(--background-color);
