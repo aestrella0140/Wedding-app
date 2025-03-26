@@ -35,6 +35,7 @@ const DirectionsMap = () => {
                </ul>
              </nav>
       <div className="card border border-dark">
+        <p></p>
         <img src={directions} alt="Map of location of venue with hyper link" />
         <p className="m-2 p-2">Click the Link to our Wedding venue for Directions!</p>
         <a className="btn btn-outline-dark"
