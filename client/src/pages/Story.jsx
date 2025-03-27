@@ -60,6 +60,18 @@ const Story = () => {
             <p>lorem ipsum...</p>
           </div>
         </div>
+        <div className="container left">
+          <div className="content">
+            <h2>2004</h2>
+            <p>lorem ipsum...</p>
+          </div>
+        </div>
+        <div className="container right">
+          <div className="content">
+            <h2>2004</h2>
+            <p>lorem ipsum...</p>
+          </div>
+        </div>
       </div>
 
       <div
