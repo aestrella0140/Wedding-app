@@ -561,9 +561,13 @@ margin-bottom: 0.5rem;
 
 .timeline {
   position: relative;
-  justify-content: center;
   max-width: 1000px;
-  margin: auto;
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  min-height: 100vh;
 }
 
 .timeline::after {
@@ -574,7 +578,7 @@ margin-bottom: 0.5rem;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: 250px;
+  transform: translateX(-50%);
 }
 
 .container {
@@ -647,9 +651,6 @@ margin-bottom: 0.5rem;
     left: 31px;
   }
 }
-
-
-
 
 /*event*/
 .event {
