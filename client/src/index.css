@@ -562,11 +562,10 @@ margin-bottom: 0.5rem;
 .timeline {
   position: relative;
   max-width: 1000px;
-  margin:  auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   min-height: 100vh;
 }
 
@@ -581,14 +580,14 @@ margin-bottom: 0.5rem;
   transform: translateX(-50%);
 }
 
-.container {
+.container-story {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
 
-.container::after {
+.container-story::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -599,14 +598,15 @@ margin-bottom: 0.5rem;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+  left: 97%;
 }
 
 .left {
-  left: 0;
+  left: -24.7%;
 }
 
 .right {
-  left: 50%;
+  left: 24.7%;
 }
 
 .left::before {

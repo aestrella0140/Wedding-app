@@ -36,37 +36,37 @@ const Story = () => {
       </nav>
 
       <div className="timeline">
-        <div className="container left">
+        <div className="container-story left">
           <div className="content"> 
             <h2>2004</h2>
             <p>lorem ipsum...</p>
           </div>
         </div>
-        <div className="container right">
+        <div className="container-story right">
           <div className="content">
             <h2>2004</h2>
             <p>lorem ipsum...</p>
           </div>
         </div>
-        <div className="container left">
+        <div className="container-story left">
           <div className="content">
             <h2>2004</h2>
             <p>lorem ipsum...</p>
           </div>
         </div>
-        <div className="container right">
+        <div className="container-story right">
           <div className="content">
             <h2>2004</h2>
             <p>lorem ipsum...</p>
           </div>
         </div>
-        <div className="container left">
+        <div className="container-story left">
           <div className="content">
             <h2>2004</h2>
             <p>lorem ipsum...</p>
           </div>
         </div>
-        <div className="container right">
+        <div className="container-story right">
           <div className="content">
             <h2>2004</h2>
             <p>lorem ipsum...</p>
@@ -77,7 +77,7 @@ const Story = () => {
       <div
         className="row"
       >
-        <div className="card-container d-flex flex-wrap justify-content-center gap-3" style={{ maxWidth: 900, margin: "auto"}}>
+        {/* <div className="card-container d-flex flex-wrap justify-content-center gap-3" style={{ maxWidth: 900, margin: "auto"}}>
           <div className="card p-3" style={{ flex: "1 1 280px", maxWidth: "600px", textAlign: "center" }}>
             <h2>How it began</h2>
             <p>
@@ -246,7 +246,7 @@ const Story = () => {
               </p>
             </div>
           
-        </div>
+        </div> */}
       </div>
     </article>
   );
