@@ -39,37 +39,49 @@ const Story = () => {
         <div className="container-story left">
           <div className="content"> 
             <h2>2004</h2>
-            <p>lorem ipsum...</p>
+            <p>We started Pre-k together. This is where we first became friends!</p>
           </div>
         </div>
         <div className="container-story right">
           <div className="content">
-            <h2>2004</h2>
-            <p>lorem ipsum...</p>
+            <h2>2005</h2>
+            <p>Started in the same kindergarten and first grade class.</p>
           </div>
         </div>
         <div className="container-story left">
           <div className="content">
-            <h2>2004</h2>
-            <p>lorem ipsum...</p>
+            <h2>2006-2013: Haitus</h2>
+            <p>We both moved away and didnt see each other until years later</p>
           </div>
         </div>
         <div className="container-story right">
           <div className="content">
-            <h2>2004</h2>
-            <p>lorem ipsum...</p>
+            <h2>2014: Reuniting!</h2>
+            <p></p>
           </div>
         </div>
         <div className="container-story left">
           <div className="content">
-            <h2>2004</h2>
-            <p>lorem ipsum...</p>
+            <h2>2015-2019</h2>
+            <p>Stayed friends throughout highschool</p>
           </div>
         </div>
         <div className="container-story right">
           <div className="content">
-            <h2>2004</h2>
-            <p>lorem ipsum...</p>
+            <h2>2-23-2019</h2>
+            <p>Went on our first date at Castles and Coasters!</p>
+          </div>
+        </div>
+        <div className="container-story left">
+          <div className="content">
+            <h2>2015-2019</h2>
+            <p>Stayed friends throughout highschool</p>
+          </div>
+        </div>
+        <div className="container-story right">
+          <div className="content">
+            <h2>2-23-2019</h2>
+            <p>Went on our first date at Castles and Coasters!</p>
           </div>
         </div>
       </div>
