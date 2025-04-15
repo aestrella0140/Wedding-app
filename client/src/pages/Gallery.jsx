@@ -2,35 +2,54 @@ import React, { useState } from "react";
 import Gallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Masonry from "react-masonry-css";
-import us from "../assets/us.jpeg";
-import meAndHer from "../assets/meAndHer.jpeg";
+import iceBar from "../assets/iceBar.jpeg";
 import meAndLove from "../assets/meAndLove.jpeg";
 import chapo from "../assets/chapo1.jpeg";
+import chapoPortrait from '../assets/chapo_portrait.jpeg';
+import disney from '../assets/disney.jpeg';
+import littleFamily from '../assets/little_family.jpeg';
+import prom from '../assets/prom.jpeg';  
 
 import styles from "./homePage.module.css";
 import { Link } from "react-router-dom";
 
+
 const images = [
   {
-    original: us,
-    thumbnail: us,
-    description: "me and love at the 2000 themed music event!",
-  },
-  {
-    original: meAndHer,
-    thumbnail: meAndHer,
-    description: "Tatiana and me at the Ice bar in Vegas!",
+    original: iceBar,
+    thumbnail: iceBar,
+    description: "Us at the ice bar in the Venetion Resort Las Vegas!"
   },
   {
     original: chapo,
     thumbnail: chapo,
-    description: "Chapo being crazy",
+    description: "Chapo being crazys",
   },
   {
     original: meAndLove,
     thumbnail: meAndLove,
     description: "Our first time at Disney together!",
   },
+  {
+    original: chapoPortrait,
+    thumbnail: chapoPortrait,
+    description: "Chapo sitting like a good boy for his photoshoot."
+  },
+  {
+    original: disney,
+    thumbnail: disney,
+    description: "Our first time at Disneyland!"
+  },
+  {
+    original: littleFamily,
+    thumbnail: littleFamily,
+    description: "The three of us at Del Monte beach in Monterey California."
+  },
+  {
+    original: prom,
+    thumbnail: prom,
+    description: "Our photo of us together on our way to senior prom."
+  }
 ];
 
 const PhotoGallery = () => {
@@ -54,7 +73,7 @@ const PhotoGallery = () => {
   };
 
   return (
-    <main className="bg-dark">
+    <main className="Gallery">
       <div className="gallery-header">
         <h2 className="gallery-h2">Estrella Life Photos</h2>
         <p>
