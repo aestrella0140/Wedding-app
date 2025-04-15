@@ -35,6 +35,10 @@ const Story = () => {
         </ul>
       </nav>
 
+      <div className="OurStory-title">
+        <h1>Our Story</h1>
+      </div>
+
       <div className="timeline">
         <div className="container-story left">
           <div className="content"> 
@@ -57,7 +61,7 @@ const Story = () => {
         <div className="container-story right">
           <div className="content">
             <h2>2014: Reuniting!</h2>
-            <p></p>
+            <p>both our parents met up for the first time in years. This is where we me reunite!</p>
           </div>
         </div>
         <div className="container-story left">
@@ -74,14 +78,14 @@ const Story = () => {
         </div>
         <div className="container-story left">
           <div className="content">
-            <h2>2015-2019</h2>
-            <p>Stayed friends throughout highschool</p>
+            <h2>3-4-23</h2>
+            <p>Popped the question!</p>
           </div>
         </div>
         <div className="container-story right">
           <div className="content">
-            <h2>2-23-2019</h2>
-            <p>Went on our first date at Castles and Coasters!</p>
+            <h2>2-23-27</h2>
+            <p>Wedding day!</p>
           </div>
         </div>
       </div>
