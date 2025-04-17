@@ -1,47 +1,15 @@
-import React, { useState, useEffect } from "react";
-import auth from "../utils/auth";
+import React from "react";
 import { Link } from "react-router-dom";
 import usThumbnail from "../assets/us_THUMBNAIL.jpg";
 import flowerTopper from "../assets/flower-topper-flipped-removebg-preview.png";
 import styles from "./homePage.module.css";
-
 import CountDown from "../components/countDown";
 
 const HomePage = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  useEffect(() => {
-    setIsLoggedIn(auth.loggedIn());
-  }, []);
-
-  const handleLogout = () => {
-    auth.logout();
-    setIsLoggedIn(false);
-  };
 
   return (
     <main className={styles.home}>
-      <nav className="admin">
-        {!isLoggedIn && (
-          <div>
-            <ul>
-              <li>
-                <Link className="ad-link" to="login">
-                  Admin
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
-        {isLoggedIn && ( 
-          <div>
-            <button onClick={handleLogout}>Logout</button>
-            <div>
-              <Link to="Admin">Admin</Link>
-            </div>
-          </div>
-        )}
-      </nav>
+      
       <img
         src={flowerTopper}
         alt="eucalyptus drawing"
