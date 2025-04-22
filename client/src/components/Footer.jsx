@@ -21,19 +21,18 @@ const footer = () => {
           <ul className="list-unstyled text-small">
             <li>
               <a
-                className="text-muted"
                 href="mailto: astarfirstborn@hotmail.com"
               >
                 Email: astarfirstborn@hotmail.com
               </a>
             </li>
             <li>
-              <a className="text-muted" href="#">
+              <a href="#">
                 Person Phone: 623-755-3094
               </a>
             </li>
             <li>
-              <a className="text-muted" href="#"></a>
+              <a href="#"></a>
             </li>
           </ul>
         </div>
@@ -42,7 +41,6 @@ const footer = () => {
           <ul className="list-unstyled text-small">
             <li>
               <a
-                className="text-muted"
                 href="https://github.com/aestrella0140/Wedding-app"
               >
                 Repository
@@ -50,10 +48,10 @@ const footer = () => {
             </li>
             <li>
               <div >
-                <div className="">
+                <div>
                 {!isLoggedIn && (
-                  <div className="">
-                    <ul>
+                  <div className="row">
+                    <ul className="col-6 ">
                       <li className="list-unstyled">
                         <Link className="ad-link text-small" to="login">
                           Admin
@@ -80,7 +78,6 @@ const footer = () => {
           <small className="text-muted">
             &copy; 2025{" "}
             <a
-              className="text-muted"
               href="https://github.com/aestrella0140"
               target="_blank"
               rel="noopener noreferrer"
