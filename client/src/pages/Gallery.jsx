@@ -18,7 +18,7 @@ const images = [
   {
     original: iceBar,
     thumbnail: iceBar,
-    description: "Us at the ice bar in the Venetion Resort Las Vegas!"
+    description: "Us at the ice bar in the Venetian Resort Las Vegas!"
   },
   {
     original: chapo,
@@ -77,12 +77,12 @@ const PhotoGallery = () => {
       <div className="gallery-header">
         <h2 className="gallery-h2">Estrella Life Photos</h2>
         <p>
-          Click on the images and browse the gallery, gives a little little
+          Click on the images and browse the gallery that gives a little little
           backstory!
         </p>
       </div>
 
-      <nav className={`${styles.nav}  Gallery  p-1 rounded mx-auto`}>
+      <nav className={`${styles.nav} p-1 rounded mx-auto`}>
         <ul className="d-flex  list-unstyled">
           <li className="mx-3">
             <Link to="/">Home</Link>
@@ -115,17 +115,22 @@ const PhotoGallery = () => {
       </Masonry>
 
       {galleryOpen && (
-        <Gallery
-          className="gallery-container"
-          items={images}
-          showThumbnails={true}
-          showPlayButton={false}
-          showFullscreenButton={true}
-          showNav={true}
-          startIndex={selectedImageIndex}
-          isOpen={galleryOpen}
-          onClose={closeGallery}
-        />
+        <div className="modal-overlay" onClick={closeGallery}> 
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-button" onClick={closeGallery}>
+              &times;
+            </button>
+          <Gallery
+            
+            items={images}
+            showThumbnails={true}
+            showPlayButton={false}
+            showFullscreenButton={true}
+            showNav={true}
+            startIndex={selectedImageIndex}
+          />
+          </div>
+        </div>
       )}
     </main>
   );
