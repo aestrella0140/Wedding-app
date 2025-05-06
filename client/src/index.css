@@ -151,6 +151,11 @@ body {
 
 }
 
+.aside h4 {
+  padding: 5px;
+  border-bottom: 2px solid #dedede;
+}
+
 .aside-p {
   padding: 110px;
 }
@@ -360,15 +365,37 @@ form button:hover {
 .modal-overlay {
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
   width: 100vw;
   height: 115vh;
+  padding: 5px;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  animation: fadeInContent 0.4s ease-out;
+}
+
+@keyframes fadeInContent {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
@@ -383,11 +410,11 @@ form button:hover {
 .close-button {
   position: relative;
   top: 10px;
-  right: 20px;
+  left: 48%;
   font-size: 2rem;
   background: none;
   border: none;
-  color: #fff;
+  color: black;
   cursor: pointer;
   z-index: 1001;
   transition: color 0.3s ease;
@@ -486,6 +513,21 @@ margin-bottom: 0.5rem;
   color: #000000;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.registry-nav {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: var(--background-color) 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.registry-nav a:hover {
+  background-color: var(--background-color);
+  color: var(--hover-text-color);
 }
 
 .registry .card {
