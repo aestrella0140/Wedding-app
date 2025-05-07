@@ -7,27 +7,27 @@ const Story = () => {
     <article className="OurStory">
       <nav className="navbar OurStory-link p-2">
         <ul className="navbar-nav d-flex flex-row justify-content-center list-unstyled ">
-          <li className="nav-item mx-3">
+          <li className=" mx-3">
             <Link to="/" className="nav-link">
               Home
             </Link>
           </li>
-          <li className="nav-item mx-3">
+          <li className="mx-3">
             <Link to="/Gallery" className="nav-link">
               Gallery
             </Link>
           </li>
-          <li className="nav-item mx-3">
+          <li className="mx-3">
             <Link to="/RSVP" className="nav-link">
               RSVP
             </Link>
           </li>
-          <li className="nav-item mx-3">
+          <li className="mx-3">
             <Link to="/Event" className="nav-link">
               Directions
             </Link>
           </li>
-          <li className="nav-item mx-3">
+          <li className="mx-3">
             <Link to="/Registry" className="nav-link">
               Registry
             </Link>

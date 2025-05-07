@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./homePage.module.css";
 
 const Registry = () => {
   return (
     <section className="registry">
-      <nav
-        className="registry-nav p-2"
-        style={{ backgroundColor: "#f8f9fa" }}
-      >
-        <ul className="list-unstyled justify-content-center d-flex flex-row ">
+      <nav className="registry-nav p-2">
+        <ul className="list-unstyled justify-content-center d-flex flex-row">
           <li className="mx-3">
             <Link to="/">Home</Link>
           </li>
