@@ -10,7 +10,6 @@ import disney from '../assets/disney.jpeg';
 import littleFamily from '../assets/little_family.jpeg';
 import prom from '../assets/prom.jpeg';  
 
-import styles from "./homePage.module.css";
 import { Link } from "react-router-dom";
 
 
@@ -82,17 +81,23 @@ const PhotoGallery = () => {
         </p>
       </div>
 
-      <nav className={`${styles.nav} p-1 rounded mx-auto`}>
-        <ul className="d-flex  list-unstyled">
+      <nav className='navbar gallery-link p-2'>
+        <ul className="navbar-nav d-flex flex-row justify-content-center list-unstyled">
           <li className="mx-3">
-            <Link to="/">Home</Link>
+            <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Story">Our Story</Link>
+            <Link to="/Story" className="nav-link">Our Story</Link>
           </li>
 
           <li className="mx-3">
-            <Link to="/RSVP">RSVP</Link>
+            <Link to="/RSVP" className="nav-link">RSVP</Link>
+          </li>
+          <li className="mx-3">
+            <Link to="/Event" className="nav-link">Directions</Link>
+          </li>
+          <li className="mx-3">
+            <Link to="/Registry" className="nav-link">Registry</Link>
           </li>
         </ul>
       </nav>
