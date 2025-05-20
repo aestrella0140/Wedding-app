@@ -519,6 +519,20 @@ input[type="number"]:focus {
   position: relative;
 }
 
+.registry-link a {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: var(--background-color) 0.3s ease, color 0.3s ease;
+  color: #000000;
+}
+
+.registry-link a:hover {
+  background-color: var(--background-color);
+  color: var(--hover-text-color);
+}
+
 .registry-nav li::after {
   content: "|";
   position: absolute;

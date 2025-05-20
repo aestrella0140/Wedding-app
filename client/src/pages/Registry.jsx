@@ -27,7 +27,7 @@ const Registry = () => {
 
       <h2>Our Registry</h2>
       <div className="card">
-        <div>
+        <div className="registry-link">
           <p>
             We're so greatful for your love and support, If you'd like to bless
             us with a gift, You can find our registries here:
