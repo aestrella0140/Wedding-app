@@ -1,6 +1,4 @@
-import * as React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Admin, Resource, ListGuesser } from 'react-admin';
 
 import {
   ApolloClient,
@@ -18,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: import.meta.env.VITE_GRAPHQL_URI,
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -34,7 +32,7 @@ const authLink = setContext((_, { headers }) => {
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
-})
+});
 
 function App() {
 
