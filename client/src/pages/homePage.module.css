@@ -3,7 +3,8 @@
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  max-width: 1400px;
+  max-width: 900px;
+  width: 95%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -29,21 +30,13 @@
   margin-bottom: 20px;
 }
 
-.story {
-  margin: 20px auto 0;
-}
+
 
 .imageSection {
   margin: 20px 0;
 }
 
-.thumnail {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 @media (min-width: 1600px) {
   .home.container {
@@ -63,11 +56,6 @@
 
 /* Styles for smaller screens */
 @media (max-width: 768px) {
-  .home.container {
-    width: calc(100% + 20px);
-    margin: 0 -10px;
-  }
-
   .home h1 {
     width: calc(100% + 20px);
     margin: 0 auto;

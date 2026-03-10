@@ -22,8 +22,8 @@ const LoginForm = () => {
         await Auth.login(data.login.token);
         console.log("user logged in");
       } catch (err) {
-        console.log("Error:", error.message);
-        console.log("Stack trace:", error.stack);
+        console.log("Error:", err.message);
+        console.log("Stack trace:", err.stack);
         setErrors({ submit: "could not login in user" });
       } finally {
         setSubmitting(false);

@@ -1,5 +1,5 @@
 const { User, RSVP } = require('../models');
-const { signToken, AuthenticatrionError } = require('../utils/auth');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
     Query: {
@@ -35,13 +35,13 @@ const resolvers = {
             const user = await User.findOne({ email });
 
             if (!user) {
-                throw new AuthenticatrionError('No user with this email');
+                throw new AuthenticationError('No user with this email');
             }
 
             const correctPw = await user.isCorrectPassword(password);
 
             if (!correctPw)  {
-                throw new AuthenticatrionError('incorrect password');
+                throw new AuthenticationError('incorrect password');
             }
 
             const token = signToken(user);
