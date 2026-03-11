@@ -1,9 +1,10 @@
 .home {
+  position: relative;
   z-index: 100;
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  max-width: 900px;
+  
   width: 95%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -26,9 +27,9 @@
   
 }
 
-.nav {
+/* .nav {
   margin-bottom: 20px;
-}
+} */
 
 
 
@@ -36,21 +37,17 @@
   margin: 20px 0;
 }
 
+/*Styles for larger screens*/
 
-
-@media (min-width: 1600px) {
-  .home.container {
-    padding-left: 40px;
-    padding-right: 40px;
+@media (min-width: 768px) {
+  .home {
+    max-width: 700px;
   }
+}
 
-  .home h1 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .img {
-    width: 800px;
+@media (min-width: 1024px) {
+  .home {
+    max-width: 1000px;
   }
 }
 
