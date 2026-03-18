@@ -57,8 +57,8 @@ const HomePage = () => {
               </a>
             </p>
           </div>
-          <section className={`${styles.imageSection} home-image my-4`}>
-            <img src={usThumbnail}  alt="Adrian and Tatiana.." className="img" />
+          <section className='home-image my-4'>
+            <img src={usThumbnail}  alt="Adrian and Tatiana.."/>
           </section>
         </aside>
       </div>

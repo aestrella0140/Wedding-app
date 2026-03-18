@@ -124,7 +124,7 @@ body {
 }
 
 .home-image img {
-  width: 380px;
+  max-width: 240px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -141,7 +141,7 @@ body {
 }
 
 .aside-p {
-  padding: 110px;
+  padding: 8px;
 }
 
 .aside a {
@@ -185,8 +185,8 @@ body {
   border-radius: 10px;
   background-color: #fff8f8e6;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 1300px;
+  margin: 2cap auto;
+  max-width: 900px;
   color: #333;
 }
 
@@ -197,21 +197,6 @@ body {
   margin: 15px 0;
 }
 
-@media (min-width: 1600px) {
-  .home.container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .home h1 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .img {
-    width: 800px;
-  }
-}
 
 form {
   background-color: rgba(255, 255, 255, 0.9);
@@ -822,9 +807,11 @@ input[type="number"]:focus {
 }
 
 /*footer*/
+
 .footer {
   background-color: var(--hover-text-color);
-  max-width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
   color: #000000;
   margin-top: 5px;
 }
