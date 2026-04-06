@@ -23,7 +23,7 @@ const HomePage = () => {
             <Link to="/RSVP">RSVP</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Event">Directions</Link>
+            <Link to="/Event">Info</Link>
           </li>
           <li className="mx-3">
             <Link to="/Registry">Registry</Link>

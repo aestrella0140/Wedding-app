@@ -21,7 +21,7 @@ const Rsvp = () => {
     address: Yup.string().required("Address is required"),
     city: Yup.string().required("City is required"),
     state: Yup.string().required("State is required"),
-    zip: Yup.number().required("Zip Code is required"),
+    zip: Yup.string().required("Zip Code is required"),
   });
 
   return (
@@ -42,7 +42,7 @@ const Rsvp = () => {
             <Link to="/Registry" className="nav-link">Registry</Link>
           </li>
           <li className="nav-item mx-3">
-            <Link to="/Event" className="nav-link">Directions</Link>
+            <Link to="/Event" className="nav-link">Info</Link>
           </li>
         </ul>
       </nav>
@@ -70,7 +70,7 @@ const Rsvp = () => {
           zip: "",
         }}
         validationSchema={RSVPValidationSchema}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, resetForm }) => {
           createRSVP({
             variables: {
               name: values.name,
@@ -89,7 +89,7 @@ const Rsvp = () => {
             setSubmitMessage("RSVP submitted successfully!");
             SetShowMessage(true);
             resetForm();
-          }).catch(() => {
+          }).catch((error) => {
             console.error("Mutation Error:", error);
             setSubmitMessage("Something went wrong. Please try again.");
             SetShowMessage(true);
@@ -120,6 +120,7 @@ const Rsvp = () => {
                 <div role="group" aria-labelledby="attending" className="radio-group">
                   <div className="radio-option">
                     <Field type="radio" name="attending" id="attendingYes" value="true" className="form-check-input" />
+                    <Field type="radio" name="attending" value="false"className="form-check-input"/>
                     <label htmlFor="attending" className="form-check-label">Yes</label>
                   </div>
                   <div className="radio-option">
@@ -141,12 +142,12 @@ const Rsvp = () => {
                 <ErrorMessage name="guests" component="div" className="error" />
               </div>
 
-                <p className="form-p">Your address is so we can send the wedding invitations! if you dont want an invitation sent to you dont fill out the address section.</p>
+                <p className="form-p">Enter Your address here so we can send the wedding invitations! if you dont want an invitation sent to you dont fill out the address section.</p>
 
               <div>
                 <div>
                   <label htmlFor="address"> Street Address:</label>
-                  <Field type="test" id="address" name="address" />
+                  <Field type="text" id="address" name="address" />
                   <ErrorMessage
                     name="address"
                     component="div"
@@ -176,7 +177,7 @@ const Rsvp = () => {
                   <ErrorMessage name="zip" component="div" className="error" />
                 </div>
 
-                <button type="submit " disabled={isSubmitting}>
+                <button type="submit" disabled={isSubmitting}>
                   Submit
                 </button>
               </div>

@@ -94,7 +94,7 @@ const PhotoGallery = () => {
             <Link to="/RSVP" className="nav-link">RSVP</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Event" className="nav-link">Directions</Link>
+            <Link to="/Event" className="nav-link">Info</Link>
           </li>
           <li className="mx-3">
             <Link to="/Registry" className="nav-link">Registry</Link>

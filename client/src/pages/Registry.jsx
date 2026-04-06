@@ -17,7 +17,7 @@ const Registry = () => {
             <Link to="/Gallery">Gallery</Link>
           </li>
           <li className="mx-3">
-            <Link to="/Event">Directions</Link>
+            <Link to="/Event">Info</Link>
           </li>
           <li className="mx-3">
             <Link to="/RSVP">RSVP</Link>
