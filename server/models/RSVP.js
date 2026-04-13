@@ -36,8 +36,9 @@ const RSVPSchema = new Schema({
         required: true,
     },
     zip: {
-        type: Number,
+        type: String,
         required: true,
+        match: [/^\d{5}(-\{4})?$/, 'Must be a valid ZIP code.'],
     }
 });
 

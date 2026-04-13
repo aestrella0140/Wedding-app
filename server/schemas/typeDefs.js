@@ -25,7 +25,7 @@ guests: Int!
 address: String!
 city: String!
 state: String!
-zip: Int!
+zip: String!
 }
 
 type Query {
@@ -41,7 +41,7 @@ type Mutation {
     login(email: String!, password: String!): Auth
     removeUser(userId: ID!): User
     createRSVP(name: String!, email: String!, attending: Boolean!, guests: Int!, address: String!, city: String!,
-    state: String!, zip: Int!): RSVP
+    state: String!, zip: String!): RSVP
 }
 `;
 
