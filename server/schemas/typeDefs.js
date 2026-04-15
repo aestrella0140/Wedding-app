@@ -22,17 +22,17 @@ name: String!
 email: String!
 attending: Boolean!
 guests: Int!
-address: String!
-city: String!
-state: String!
-zip: String!
+address: String
+city: String
+state: String
+zip: String 
 }
 
 type Query {
 users: [User]!
 user(userId: ID!): User
 me: User
-getRSVPs: [RSVP]
+getRSVPs: [RSVP!]!
 }
 
 type Mutation {
@@ -40,8 +40,8 @@ type Mutation {
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
     removeUser(userId: ID!): User
-    createRSVP(name: String!, email: String!, attending: Boolean!, guests: Int!, address: String!, city: String!,
-    state: String!, zip: String!): RSVP
+    createRSVP(name: String!, email: String!, attending: Boolean!, guests: Int!, address: String, city: String,
+    state: String, zip: String): RSVP
 }
 `;
 

@@ -25,19 +25,16 @@ const RSVPSchema = new Schema({
     },
     address: {
         type: String,
-        required: true,
     },
     city: {
         type: String,
-        required: true,
     },
     state: {
-        type: String,
-        required: true,
+        type: String, 
     },
     zip: {
         type: String,
-        required: true,
+        
         match: [/^\d{5}(-\{4})?$/, 'Must be a valid ZIP code.'],
     }
 });
