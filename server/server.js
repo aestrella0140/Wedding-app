@@ -8,6 +8,7 @@ const { authMiddleware } = require('./utils/auth');
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
+const cors = require("cors");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -16,8 +17,14 @@ const server = new ApolloServer({
     resolvers,
 });
 
+
 const startApolloServer = async () => {
     await server.start();
+
+    app.use(cors({
+        origin: "https://wedding-frontend.netlify.app/",
+        credentials: true
+    }));
 
     app.use(express.urlencoded({ extended: false }));
     app.use(express.json());
