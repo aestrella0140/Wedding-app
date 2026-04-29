@@ -21,17 +21,23 @@ const server = new ApolloServer({
 const startApolloServer = async () => {
     await server.start();
 
-    app.use(cors({
-        origin: "https://wedding-frontend.netlify.app/",
-        credentials: true
-    }));
+    
 
     app.use(express.urlencoded({ extended: false }));
     app.use(express.json());
 
-    app.use('/graphql', expressMiddleware(server, {
-        context: authMiddleware
-    }));
+    app.options('*', cors());
+
+    app.use('/graphql',
+        cors({
+            origin: "https://wedding-frontend.netlify.app",
+            credentials: true,
+        }),
+        express.json(),
+        expressMiddleware(server, {
+            context: authMiddleware,
+        })
+    );
 
     if (process.env.NODE_ENV === 'production') {
         app.use(express.static(path.join(__dirname, '../client/dist')));
