@@ -173,7 +173,7 @@ const Rsvp = () => {
 
                 <div>
                   <label htmlFor="zip"> Zip Code:</label>
-                  <Field type="number" id="zip" name="zip" />
+                  <Field type="text" id="zip" name="zip" />
                   <ErrorMessage name="zip" component="div" className="error" />
                 </div>
 
