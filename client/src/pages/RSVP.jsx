@@ -87,7 +87,7 @@ const Rsvp = () => {
               throw new Error("GraphQL error");
             }
             setSubmitMessage("RSVP submitted successfully!");
-            SetShowMessage(true);
+            setShowMessage(true);
             resetForm();
           }).catch((error) => {
             console.error("Mutation Error:", error);
