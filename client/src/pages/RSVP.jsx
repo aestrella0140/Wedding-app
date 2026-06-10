@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Rsvp = () => {
   const [ createRSVP, { loading }] = useMutation(CREATE_RSVP);
   const [ submitMessage, setSubmitMessage ] = React.useState(null);
-  const [ showMessage, SetShowMessage ] = React.useState(false);
+  const [ showMessage, setShowMessage ] = React.useState(false);
 
   const RSVPValidationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
@@ -55,7 +55,7 @@ const Rsvp = () => {
           {showMessage && (
             <div className="alert alert-success alert-dismissible fade show" role="alert">
               {submitMessage}
-              <button type="button" className="btn-close" onClick={() => SetShowMessage(false)}>ok</button>
+              <button type="button" className="btn-close" onClick={() => setShowMessage(false)}></button>
             </div>
           )}
       <Formik
@@ -86,13 +86,13 @@ const Rsvp = () => {
             if (errors) {
               throw new Error("GraphQL error");
             }
-            setSubmitMessage("RSVP submitted successfully!");
+            setSubmitMessage("✓ RSVP Submitted Successfully");
             setShowMessage(true);
             resetForm();
           }).catch((error) => {
             console.error("Mutation Error:", error);
             setSubmitMessage("Something went wrong. Please try again.");
-            SetShowMessage(true);
+            setShowMessage(true);
           })
           .finally(() => {
             setSubmitting(false);
