@@ -19,9 +19,9 @@ const HomePage = () => {
           <li className="mx-3">
             <Link to="/Gallery">Gallery</Link>
           </li>
-          <li className="mx-3">
+          {/* <li className="mx-3">
             <Link to="/RSVP">RSVP</Link>
-          </li>
+          </li> */}
           <li className="mx-3">
             <Link to="/Event">Info</Link>
           </li>
@@ -35,7 +35,7 @@ const HomePage = () => {
       </nav>
 
       <div className="story">
-        <CountDown targetDate="2026-02-23T00:00:00" />
+        <CountDown targetDate="2027-02-20T00:00:00" />
         <p>
           We're so excited to celebrate our special day with all of you. Here,
           you'll find everything you need to know about our big day, from event

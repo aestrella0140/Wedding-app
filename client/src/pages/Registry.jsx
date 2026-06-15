@@ -19,9 +19,9 @@ const Registry = () => {
           <li className="mx-3">
             <Link to="/Event">Info</Link>
           </li>
-          <li className="mx-3">
+          {/* <li className="mx-3">
             <Link to="/RSVP">RSVP</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 

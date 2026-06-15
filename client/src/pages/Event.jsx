@@ -17,11 +17,11 @@ const DirectionsMap = () => {
               Gallery
             </Link>
           </li>
-          <li className="mx-3">
+          {/* <li className="mx-3">
             <Link to="/RSVP" className="nav-link">
               RSVP
             </Link>
-          </li>
+          </li> */}
           <li className="mx-3">
             <Link to="/Registry" className="nav-link">
               Registry
