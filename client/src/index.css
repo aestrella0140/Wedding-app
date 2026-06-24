@@ -551,22 +551,27 @@ input[type="number"]:focus {
   color: var(--hover-text-color);
 }
 
-.registry .card {
-  align-items: center;
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-style: ridge;
+.registry-hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.registry .card ul {
-  display: flex;
-  justify-content: center;
+.divider {
+  width: 180px;
+  height: 2px;
+  background: #c8b28c;
+  margin: 1.5rem auto;
+  border-radius: 999px;
 }
 
-.registry .card li {
-  padding: 1rem;
-  list-style: none;
+.divider::before,
+.divider::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: #d8d8d8;
 }
 
 /*admin..jsx*/
