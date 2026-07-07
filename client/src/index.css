@@ -574,6 +574,42 @@ input[type="number"]:focus {
   background: #d8d8d8;
 }
 
+.divider::before {
+  margin-right: 15px;
+}
+
+.divider::after {
+  margin-left: 15px;
+}
+
+.divider::after,
+.divider::before {
+  flex-shrink: 0;
+}
+
+.divider::before,
+.divider::after {
+  display: inline-block;
+}
+
+.divider::after,
+.divider::before {
+  vertical-align: middle;
+}
+
+.divider::before {
+  content: "";
+}
+
+.divider::after {
+  content: "";
+}
+
+.divider::before,
+.divider::after {
+  background-color: #d4c4a8;
+}
+
 /*admin..jsx*/
 .Admin {
   display: flex;

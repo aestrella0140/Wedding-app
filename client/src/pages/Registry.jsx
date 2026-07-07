@@ -24,15 +24,20 @@ const Registry = () => {
           </li> */}
         </ul>
       </nav>
-      <div className="registry-hero text center">
+      <div className="registry-hero">
         <h2>Our Registry</h2>
-        <div className="divider">
-          <div className="divider"></div>
+
+          <div className="divider">
+             ✿
+          </div>
+
+        
             <p className="lead">
-              We're so greatful for your love and support, If you'd like to
+              We're so gratful for your love and support, If you'd like to
               bless us with a gift, You can find our registries here:
             </p>
-            <ul>
+
+            <ul className="list-unstyled">
               <li>
                 <a href="#">target</a>
               </li>
@@ -45,7 +50,6 @@ const Registry = () => {
               </li>
             </ul>
         </div>
-      </div>
     </section>
   );
 };
