@@ -28,25 +28,18 @@ const Registry = () => {
         <h2>Our Registry</h2>
 
           <div className="divider">
-             ✿
+            <span>✿</span> 
           </div>
 
         
             <p className="lead">
-              We're so gratful for your love and support, If you'd like to
+              We're so grateful for your love and support, If you'd like to
               bless us with a gift, You can find our registries here:
             </p>
 
             <ul className="list-unstyled">
               <li>
-                <a href="#">target</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#">walmart</a>
-              </li>
-              <li>
-                <a href="#">Honeymoon Fund</a>
+                <a href="https://www.honeyfund.com/site/TatianaandAdrian2027">Honeyfund</a>
               </li>
             </ul>
         </div>

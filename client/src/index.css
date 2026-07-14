@@ -558,56 +558,30 @@ input[type="number"]:focus {
   margin: 0 auto;
 }
 
+
 .divider {
-  width: 180px;
-  height: 2px;
-  background: #c8b28c;
-  margin: 1.5rem auto;
-  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto 2rem;
+
+  width: 100%;
+  color: #c8b28c;
 }
 
 .divider::before,
 .divider::after {
   content: "";
-  width: 80px;
+  flex: 1;
+  max-width: 90px;
   height: 1px;
-  background: #d8d8d8;
+  background-color: #c8b28c;
 }
 
-.divider::before {
-  margin-right: 15px;
-}
-
-.divider::after {
-  margin-left: 15px;
-}
-
-.divider::after,
-.divider::before {
-  flex-shrink: 0;
-}
-
-.divider::before,
-.divider::after {
-  display: inline-block;
-}
-
-.divider::after,
-.divider::before {
-  vertical-align: middle;
-}
-
-.divider::before {
-  content: "";
-}
-
-.divider::after {
-  content: "";
-}
-
-.divider::before,
-.divider::after {
-  background-color: #d4c4a8;
+.divider span {
+  margin: 0 15px;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 /*admin..jsx*/
